@@ -21,14 +21,20 @@ public:
    void move(Move move);
    void setVelocity(float v);
    sf::Vector2f getSpeed();
+   int getWater();
+   void setWater(int x);
+   Animation animation;
 private:
    void setSpeed(sf::Vector2f speed);
    void setSpeed(float x, float y);
+   
 public:
    
 private:
-   Animation animation;
+   
    sf::Vector2f speed;
    bool isFront, isRight;
    float velocity;
+   int isInWater;
+
 };
