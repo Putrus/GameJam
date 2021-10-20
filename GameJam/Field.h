@@ -12,6 +12,7 @@ public:
 	bool isAnimate();
 	void setEffectTexture(sf::Texture& texture);
 	void setPosition2(float x, float y);
+	bool isWater();
 private:
 	
 public: 

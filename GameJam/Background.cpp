@@ -8,7 +8,8 @@ void Background::initialize(TextureHolder& textures) {
 		fields.push_back(std::vector<Field*>());
 		for (size_t j = 0; j < 8; ++j) {
 			int x = std::rand() % 4;
-			Field* field = new Field(x, 0);
+			int y = std::rand() % 3;
+			Field* field = new Field(x, y);
 			field->setTexture(textures.get(Textures::ground));
 			field->setEffectTexture(textures.get(Textures::groundEffects));
 			field->setPosition2(float(i * 96), float(j * 96));
