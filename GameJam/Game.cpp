@@ -38,11 +38,20 @@ void Game::processEvents()
 			break;
 		
 		case sf::Event::KeyReleased:
-			if (((event.key.code == sf::Keyboard::W && 
-				character.getSpeed().y < 0 || event.key.code == sf::Keyboard::S && character.getSpeed().y > 0 )
-				&& character.getSpeed().x == 0) || ((event.key.code == sf::Keyboard::A &&
-					character.getSpeed().x < 0 || event.key.code == sf::Keyboard::D && character.getSpeed().x > 0)
-					&& character.getSpeed().y == 0)) {
+			/*if (
+				((   event.key.code == sf::Keyboard::W && character.getSpeed().y < 0 || event.key.code == sf::Keyboard::S && character.getSpeed().y > 0) && character.getSpeed().x == 0) 
+				|| ((event.key.code == sf::Keyboard::A && character.getSpeed().x < 0 || event.key.code == sf::Keyboard::D && character.getSpeed().x > 0) && character.getSpeed().y == 0)
+				|| (event.key.code == sf::Keyboard::A && character.getSpeed().x < 0 && character.getSpeed().y > 0)
+				|| (event.key.code == sf::Keyboard::W && character.getSpeed().y < 0 && character.getSpeed().x < 0)
+				|| (event.key.code == sf::Keyboard::S && character.getSpeed().y > 0 && character.getSpeed().x > 0)
+				|| (event.key.code == sf::Keyboard::D && character.getSpeed().x > 0 && character.getSpeed().y < 0)
+				) {
+				character.move(Stop);
+			}*/
+			if (event.key.code == sf::Keyboard::W && character.getSpeed().y < 0
+				|| event.key.code == sf::Keyboard::S && character.getSpeed().y > 0
+				|| event.key.code == sf::Keyboard::A && character.getSpeed().x < 0
+				|| event.key.code == sf::Keyboard::D && character.getSpeed().x > 0) {
 				character.move(Stop);
 			}
 			break;
