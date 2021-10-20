@@ -1,17 +1,28 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Animation.h"
 
 class Field : public sf::Sprite {
 public:
-	Field();
+	Field(int x, int y);
 	~Field();
+	void update(sf::Time& dt);
+	void doAnimation();
+	void drawEffect(sf::RenderWindow& window);
+	bool isAnimate();
+	void setEffectTexture(sf::Texture& texture);
+	void setPosition2(float x, float y);
+	bool isWater();
+	int getType();
 private:
-	std::unique_ptr<sf::Sprite> effect;
+	
 public: 
 	
 private:
+	sf::Sprite * effect;
+	Animation  aEffect;
 	int lvl;
+	int type;
 	sf::Time growTime;
-
-
+	bool animate;
 };

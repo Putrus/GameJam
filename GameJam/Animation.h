@@ -16,11 +16,12 @@ private:
    AnimObject object;
 public:
    Animation(AnimObject _object = AnimObject::Char, int _animation = 0, int _maxFrameNr = 4, float _animSpeed = 0.08f);
+   ~Animation();
    //return true if animation is over
    bool nextFrame();
    void setAnimation(int n);
    int getAnimation();
    int getFrame();
    //return true if animation is over
-   bool update(sf::Time dt);
+   bool update(sf::Time& dt);
 };

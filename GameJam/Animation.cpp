@@ -5,10 +5,14 @@ Animation::Animation(AnimObject _object, int _animation, int _maxFrameNr, float 
    delay = 0.0f;
 }
 
+Animation::~Animation() {
+
+}
+
 bool Animation::nextFrame() {
    switch (object) {
    case Char:
-      frameNr = (animation < 6) ? (frameNr + 1) % 4 : (frameNr + 1) % 5;
+      frameNr = (animation < 8) ? (frameNr + 1) % 4 : (frameNr + 1) % 5;
       break;
    case Effect:
       frameNr = (frameNr + 1) % 15;
@@ -19,7 +23,6 @@ bool Animation::nextFrame() {
 
 void Animation::setAnimation(int n) {
    animation = n;
-   //frameNr = 0;
 }
 
 int Animation::getAnimation() {
@@ -29,7 +32,7 @@ int Animation::getFrame() {
    return frameNr;
 }
 
-bool Animation::update(sf::Time dt) {
+bool Animation::update(sf::Time& dt) {
    delay += dt.asSeconds();
    if (delay > animSpeed) {
       delay = 0.0f;

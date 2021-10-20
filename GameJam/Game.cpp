@@ -18,9 +18,10 @@ void Game::run()
 		{
 			timeSinceLastUpdate -= mTimePerFrame;
 
-			processEvents();
 			update(mTimePerFrame);
+			processEvents();
 		}
+		fastUpdate();
 		render();
 	}
 }
@@ -28,9 +29,9 @@ void Game::run()
 void Game::processEvents()
 {
 	sf::Event event;
+	Character& character = mWorld.getCharacter();
 	while (mWindow.pollEvent(event))
 	{
-		Character& character = mWorld.getCharacter();
 		switch (event.type)
 		{
 		case sf::Event::Closed:
@@ -46,37 +47,41 @@ void Game::processEvents()
 			}
 			break;
 		case sf::Event::KeyPressed:			
-			if(event.key.code == sf::Keyboard::W){
+			if(character.getSpeed().y <= 0 && event.key.code == sf::Keyboard::W){
 				if (character.getSpeed().x < 0)
 					character.move(UpLeft);
 				else if(character.getSpeed().x > 0)
 					character.move(UpRight);
 				else
 					character.move(Up);
+				break;
 			}
-			if (event.key.code == sf::Keyboard::S) {
+			if (character.getSpeed().y >= 0 && event.key.code == sf::Keyboard::S) {
 				if (character.getSpeed().x < 0)
 					character.move(DownLeft);
 				else if (character.getSpeed().x > 0)
 					character.move(DownRight);
 				else
 					character.move(Down);
+				break;
 			}
-			if (event.key.code == sf::Keyboard::A) {
+			if (character.getSpeed().x <= 0 && event.key.code == sf::Keyboard::A) {
 				if (character.getSpeed().y < 0)
 					character.move(UpLeft);
 				else if (character.getSpeed().y > 0)
 					character.move(DownLeft);
 				else
-				character.move(Left);
+					character.move(Left);
+				break;
 			}
-			if (event.key.code == sf::Keyboard::D) {
+			if (character.getSpeed().x >= 0 && event.key.code == sf::Keyboard::D) {
 				if (character.getSpeed().y < 0)
 					character.move(UpRight);
 				else if (character.getSpeed().y > 0)
 					character.move(DownRight);
 				else
 				character.move(Right);
+				break;
 			}			
 			break;		
 		}
@@ -93,4 +98,8 @@ void Game::render()
 	mWindow.clear();	
 	mWorld.draw();
 	mWindow.display();
+}
+
+void Game::fastUpdate() {
+	mWorld.checkWater();
 }
