@@ -13,6 +13,7 @@ public:
 	void setEffectTexture(sf::Texture& texture);
 	void setPosition2(float x, float y);
 	bool isWater();
+	int getType();
 private:
 	
 public: 

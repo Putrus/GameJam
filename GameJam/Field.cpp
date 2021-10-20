@@ -50,3 +50,8 @@ void Field::setPosition2(float x, float y) {
 bool Field::isWater() {
    return type == 2;
 }
+
+int Field::getType() {
+   return type;
+}
+

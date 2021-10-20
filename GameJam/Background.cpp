@@ -18,6 +18,8 @@ void Background::initialize(TextureHolder& textures) {
 	}
 }
 
+
+
 Background::~Background() {
 	for (size_t i = 0; i < 8; ++i) {
 		for (size_t j = 0; j < 8; ++j) {			
@@ -42,4 +44,12 @@ void Background::update(sf::Time& dt) {
 			fields[i][j]->update(dt);
 		}
 	}
+}
+
+int Background::getFieldType(int x, int y) {
+	return fields[x][y]->getType();
+}
+
+sf::Vector2f Background::getFieldPosition(int x, int y) {
+	return fields[x][y]->getPosition();
 }
