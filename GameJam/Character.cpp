@@ -25,7 +25,7 @@ sf::Vector2f Character::getSpeed() {
 	return this->speed;
 }
 void Character::setWater(int i) {
-	this->isInWater = 4;
+	this->isInWater = i;
 }
 int Character::getWater() {
 	return this->isInWater;

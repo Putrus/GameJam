@@ -8,7 +8,7 @@ Animation::Animation(AnimObject _object, int _animation, int _maxFrameNr, float 
 bool Animation::nextFrame() {
    switch (object) {
    case Char:
-      frameNr = (animation < 6) ? (frameNr + 1) % 4 : (frameNr + 1) % 5;
+      frameNr = (animation < 8) ? (frameNr + 1) % 4 : (frameNr + 1) % 5;
       break;
    case Effect:
       frameNr = (frameNr + 1) % 15;
