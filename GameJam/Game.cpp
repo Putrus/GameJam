@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "ResourceManager.h"
 #include <SFML/Graphics.hpp>
 
 Game::Game() : mWindow(sf::VideoMode(1280, 960), "Game"), mTimePerFrame(sf::seconds(1.f/60.f)){
@@ -45,8 +46,8 @@ void Game::update(sf::Time elapsedTime)
 }
 
 void Game::render()
-{
-	mWindow.clear();
+{	
+	mWindow.clear();	
 	mWindow.setView(mWindow.getDefaultView());
 	mWindow.display();
 }
