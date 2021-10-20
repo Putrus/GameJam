@@ -33,7 +33,8 @@ void World::checkWater() {
 			/*if (fields[i][j].getWater() == 1) {
 				character.
 			}*/
-			character.setWater(4);
+			//USTAW NA 4 JAK CHCESZ ¯EBY P£YWA£
+			character.setWater(0);
 			
 		}
 	}
