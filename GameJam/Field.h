@@ -4,7 +4,7 @@
 class Field : public sf::Sprite {
 
 public:
-	
+	Field();
 
 private:
 	

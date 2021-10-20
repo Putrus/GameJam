@@ -1,6 +1,6 @@
 #pragma once
 #include "Resources.h"
-//#include "Background.h"
+#include "Background.h"
 
 #include <SFML/Graphics.hpp>
 
@@ -17,5 +17,5 @@ private:
 private:
    sf::RenderWindow& mWindow;
    TextureHolder mTextures;
-   //Background background
+   Background background;
 };

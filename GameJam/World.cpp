@@ -2,6 +2,7 @@
 
 World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
+	background = Background(mTextures);
 }
 
 void World::update(sf::Time dt) {
@@ -9,7 +10,7 @@ void World::update(sf::Time dt) {
 }
 
 void World::draw() {
-	//background.draw(mWindow);
+	background.draw(mWindow);
 }
 
 void World::loadTextures() {
