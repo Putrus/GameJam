@@ -6,7 +6,8 @@
 enum Textures {
    b1,
    b2,
-   b3
+   b3,
+   farmer
 };
 
 enum Fonts {
