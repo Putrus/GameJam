@@ -5,6 +5,10 @@ enum Move {
    Up,
    Left,
    Right,
+   UpLeft,
+   UpRight,
+   DownLeft,
+   DownRight,
    Down,
    Stop
 };
@@ -16,6 +20,7 @@ public:
    void update(sf::Time dt);
    void move(Move move);
    void setVelocity(float v);
+   sf::Vector2f getSpeed();
 private:
    void setSpeed(sf::Vector2f speed);
    void setSpeed(float x, float y);
@@ -24,6 +29,6 @@ public:
 private:
    Animation animation;
    sf::Vector2f speed;
-   bool isFront;
+   bool isFront, isRight;
    float velocity;
 };
