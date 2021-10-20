@@ -8,6 +8,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 
 void World::update(sf::Time dt) {
 	character.update(dt);
+	checkWater();
 }
 
 void World::draw() {
@@ -23,6 +24,20 @@ void World::loadTextures() {
 
 void World::buildScene() {
 
+}
+void World::checkWater() {
+	for (size_t i = 0; i < 8; i++) {
+		for (size_t j = 0; j < 8; j++) {
+			
+			//TU SPRAWDZAMY ZAWODNIENIE POLA
+			/*if (fields[i][j].getWater() == 1) {
+				character.
+			}*/
+			character.setWater(4);
+			
+		}
+	}
+	
 }
 
 Character& World::getCharacter() {
