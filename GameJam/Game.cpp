@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <SFML/Graphics.hpp>
 
-Game::Game() : mWindow(sf::VideoMode(640, 480), "Game"), TimePerFrame(sf::seconds(1.f/60.f)){
+Game::Game() : mWindow(sf::VideoMode(1280, 960), "Game"), mTimePerFrame(sf::seconds(1.f/60.f)){
 
 }
 
@@ -9,17 +9,17 @@ void Game::run()
 {
 	sf::Clock clock;
 	sf::Time timeSinceLastUpdate = sf::Time::Zero;
+	//game loop
 	while (mWindow.isOpen())
 	{
 		sf::Time elapsedTime = clock.restart();
 		timeSinceLastUpdate += elapsedTime;
-		while (timeSinceLastUpdate > TimePerFrame)
+		while (timeSinceLastUpdate > mTimePerFrame)
 		{
-			timeSinceLastUpdate -= TimePerFrame;
+			timeSinceLastUpdate -= mTimePerFrame;
 
 			processEvents();
-			update(TimePerFrame);
-
+			update(mTimePerFrame);
 		}
 		render();
 	}
