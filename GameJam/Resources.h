@@ -4,9 +4,8 @@
 #include "ResourceHolder.h"
 
 enum Textures {
-   b1,
-   b2,
-   b3,
+   ground,
+   groundEffects,
    farmer
 };
 

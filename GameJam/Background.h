@@ -6,8 +6,9 @@
 class Background {
 public:
 	Background();
-	Background(TextureHolder& textures);
+	~Background();
 	void draw(sf::RenderWindow& window);
+	void initialize(TextureHolder& textures);
 private:
 	std::vector <std::vector<Field*>> fields;
 };
