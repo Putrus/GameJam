@@ -4,13 +4,13 @@
 class Game {
 public:
    sf::RenderWindow mWindow;
-   const sf::Time TimePerFrame;
+   const sf::Time mTimePerFrame;
 
 public:
+   Game();
    void run();
 
 private:
-   Game();
    void processEvents();
    void update(sf::Time elapsedTime);
    void render();
