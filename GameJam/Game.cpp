@@ -46,12 +46,8 @@ void Game::update(sf::Time elapsedTime)
 }
 
 void Game::render()
-{
-	ResourceHolder <sf::Texture, int > holder;
-	holder.load(1, "Raptor.png");
-	sf::Sprite sprite(holder.get(1));
-	mWindow.clear();
-	mWindow.draw(sprite);
+{	
+	mWindow.clear();	
 	mWindow.setView(mWindow.getDefaultView());
 	mWindow.display();
 }
