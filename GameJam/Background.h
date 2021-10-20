@@ -9,6 +9,7 @@ public:
 	~Background();
 	void draw(sf::RenderWindow& window);
 	void initialize(TextureHolder& textures);
+	void update(sf::Time& dt);
 private:
 	std::vector <std::vector<Field*>> fields;
 };

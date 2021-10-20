@@ -8,6 +8,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 
 void World::update(sf::Time dt) {
 	character.update(dt);
+	background.update(dt);
 }
 
 void World::draw() {

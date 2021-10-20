@@ -28,9 +28,9 @@ void Game::run()
 void Game::processEvents()
 {
 	sf::Event event;
+	Character& character = mWorld.getCharacter();
 	while (mWindow.pollEvent(event))
 	{
-		Character& character = mWorld.getCharacter();
 		switch (event.type)
 		{
 		case sf::Event::Closed:
@@ -38,10 +38,11 @@ void Game::processEvents()
 			break;
 		
 		case sf::Event::KeyReleased:
-			if (event.key.code == sf::Keyboard::W && character.getSpeed().y < 0
-				|| event.key.code == sf::Keyboard::S && character.getSpeed().y > 0
-				|| event.key.code == sf::Keyboard::A && character.getSpeed().x < 0
-				|| event.key.code == sf::Keyboard::D && character.getSpeed().x > 0) {
+			if (((event.key.code == sf::Keyboard::W && 
+				character.getSpeed().y < 0 || event.key.code == sf::Keyboard::S && character.getSpeed().y > 0 )
+				&& character.getSpeed().x == 0) || ((event.key.code == sf::Keyboard::A &&
+					character.getSpeed().x < 0 || event.key.code == sf::Keyboard::D && character.getSpeed().x > 0)
+					&& character.getSpeed().y == 0)) {
 				character.move(Stop);
 			}
 			break;
@@ -53,6 +54,7 @@ void Game::processEvents()
 					character.move(UpRight);
 				else
 					character.move(Up);
+				break;
 			}
 			if (event.key.code == sf::Keyboard::S) {
 				if (character.getSpeed().x < 0)
@@ -61,6 +63,7 @@ void Game::processEvents()
 					character.move(DownRight);
 				else
 					character.move(Down);
+				break;
 			}
 			if (event.key.code == sf::Keyboard::A) {
 				if (character.getSpeed().y < 0)
@@ -69,6 +72,7 @@ void Game::processEvents()
 					character.move(DownLeft);
 				else
 				character.move(Left);
+				break;
 			}
 			if (event.key.code == sf::Keyboard::D) {
 				if (character.getSpeed().y < 0)
@@ -77,6 +81,7 @@ void Game::processEvents()
 					character.move(DownRight);
 				else
 				character.move(Right);
+				break;
 			}			
 			break;		
 		}
