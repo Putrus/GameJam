@@ -48,3 +48,4 @@ void Character::move(Move move) {
 void Character::setVelocity(float v) {
    velocity = v;
 }
+

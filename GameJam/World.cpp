@@ -2,7 +2,7 @@
 
 World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
-	background = Background(mTextures);
+	background.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
 }
 
@@ -16,8 +16,9 @@ void World::draw() {
 }
 
 void World::loadTextures() {
-	mTextures.load(Textures::b1, "Resources/Textures/b1.png");
+	mTextures.load(Textures::ground, "Resources/Textures/ground.png");
 	mTextures.load(Textures::farmer, "Resources/Textures/farmer.png");
+	mTextures.load(Textures::groundEffects, "Resources/Textures/groundEffects.png");
 }
 
 void World::buildScene() {
