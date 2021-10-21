@@ -7,7 +7,8 @@
 enum Textures {
    ground,
    groundEffects,
-   farmer
+   farmer,
+   background
 };
 
 enum Fonts {
@@ -23,7 +24,11 @@ enum Sounds {
    playerFootsteps4,
    fertilize,
    enteringWater,
-   harvestCarrot
+   harvestCarrot,
+   plantCarrots1,
+   plantCarrots2,
+   plantCarrots3,
+   plantCarrots4
 };
 
 //enum Sound

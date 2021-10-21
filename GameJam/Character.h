@@ -24,14 +24,16 @@ public:
    int getWater();
    void setWater(int x);
    Animation animation;
+   void setField(int x, int y);
+   void setField(sf::Vector2i field);
+   sf::Vector2i getField();
 private:
    void setSpeed(sf::Vector2f speed);
    void setSpeed(float x, float y);
-   
 public:
    
 private:
-   
+   sf::Vector2i actualField;
    sf::Vector2f speed;
    bool isFront, isRight;
    float velocity;

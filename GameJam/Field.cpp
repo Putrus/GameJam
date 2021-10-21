@@ -1,7 +1,7 @@
 #pragma once
 #include "Field.h"
 #include <iostream>
-Field::Field(int x, int y) : aEffect(Effect, y, 15, 0.20f) {
+Field::Field(int x, int y) : aEffect(Effect, y, 15, 0.10f) {
    setTextureRect(sf::IntRect(x * 96, y * 96, 96, 96));
    effect = new Sprite();
    lvl = x;
@@ -26,6 +26,9 @@ void Field::update(sf::Time& dt) {
    if (animate) {
       aEffect.update(dt);
       effect->setTextureRect(sf::IntRect(aEffect.getFrame()*96, aEffect.getAnimation() *96, 96, 96));
+      if (aEffect.getAnimation() == 3 && aEffect.getFrame() == 14) {
+         animate = false;
+      }
    }
 }
 
@@ -73,11 +76,39 @@ void Field::harvestCarrot() {
 }
 
 void Field::growUp() {
-   if (getLevel() < 3 && getType() == 0) {
+   if (getLevel() < 3 && getLevel() > 0 && getType() == 0) {
       setLevel(getLevel() + 1);
       if (getLevel() == 3) {
+         aEffect.setAnimation(0);
          animate = true;
       }
       setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
    }
+}
+
+bool Field::plantCarrot() {
+   if (getLevel() == 0 && getType() == 0) {
+      setLevel(getLevel() + 1);
+      setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
+      return true;
+   }
+   return false;
+}
+
+bool Field::fertilize() {
+   if (getType() == 1) {
+      if (getLevel() == 3) {
+         setLevel(0);
+         type = 0;
+      }
+      else {
+         setLevel(getLevel() + 1);
+      }
+      setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
+      aEffect.setAnimation(3);
+      aEffect.setFrame(1);
+      animate = true;
+      return true;
+   }
+   return false;
 }

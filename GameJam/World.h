@@ -9,13 +9,15 @@ public:
    void update(sf::Time dt);
    void draw();
    Character& getCharacter();
-   void checkFieldType();
+   Background& getBackground();
+   sf::Vector2i checkField(Character& character);
+   void playSound(Sounds s);
 
 private:
    void loadTextures();
    void loadSounds();
    void buildScene();
-   void playSound(Sounds s);
+   
 
 private:
    Character character;

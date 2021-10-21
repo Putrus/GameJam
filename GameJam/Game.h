@@ -12,7 +12,6 @@ private:
    void processEvents();
    void update(sf::Time elapsedTime);
    void render();
-   void fastUpdate();
 private:
    sf::RenderWindow mWindow;
    const sf::Time mTimePerFrame;

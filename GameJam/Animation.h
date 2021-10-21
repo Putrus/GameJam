@@ -22,6 +22,7 @@ public:
    void setAnimation(int n);
    int getAnimation();
    int getFrame();
+   void setFrame(int n);
    //return true if animation is over
    bool update(sf::Time& dt);
 };

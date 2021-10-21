@@ -3,6 +3,9 @@
 
 Character::Character(sf::Vector2f position, float v) : isFront(true), velocity(v), isRight(true){
    setPosition(position);
+	actualField = sf::Vector2i(0, 0);
+	isInWater = 0;
+	setPosition(576.0f, 156.0f);
 }
 
 void Character::update(sf::Time dt) {
@@ -97,5 +100,17 @@ void Character::move(Move move) {
 
 void Character::setVelocity(float v) {
    velocity = v;
+}
+
+void Character::setField(int x, int y) {
+	actualField = sf::Vector2i(x, y);
+}
+
+sf::Vector2i Character::getField() {
+	return actualField;
+}
+
+void Character::setField(sf::Vector2i field) {
+	actualField = field;
 }
 

@@ -18,6 +18,8 @@ public:
 	void setLevel(int lvl);
 	void harvestCarrot();
 	void growUp();
+	bool plantCarrot();
+	bool fertilize();
 private:
 	
 public: 

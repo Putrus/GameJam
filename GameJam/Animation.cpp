@@ -41,4 +41,7 @@ bool Animation::update(sf::Time& dt) {
    return false;
 }
 
+void Animation::setFrame(int n) {
+   frameNr = n;
+}
 
