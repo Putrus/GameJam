@@ -15,12 +15,14 @@ private:
    void loadTextures();
    void loadSounds();
    void buildScene();
-   void playSound(Sounds s);
+   void playSound(Sounds s, float v);
+   void playSoundFoot(Sounds s, float v);
 
 private:
    Character character;
    sf::RenderWindow& mWindow;
    sf::Sound sound;
+   sf::Sound soundFoot;
    TextureHolder mTextures;
    SoundHolder mSounds;
    Background background;

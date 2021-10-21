@@ -11,6 +11,14 @@ void World::update(sf::Time dt) {
 	character.update(dt);
 	background.update(dt);
 	checkFieldType();
+	if (character.animation.getAnimation() < 4) {
+		if (character.lastFrame != 0) {
+			if (character.animation.getFrame() == 2) {
+				playSoundFoot(playerFootsteps1,20);
+			}
+		}
+	}
+	
 }
 
 void World::draw() {
@@ -47,14 +55,14 @@ void World::checkFieldType() {
 			if ((cX + 20 > wX && cY + 48 > wY) && (cX + 20 < wX + 96 && cY + 48 < wY + 96)) {
 				if ((background.getFieldType(i, j) == 2 && character.getWater() != 4)) {
 					character.setWater(4);
-					playSound(fertilize);
+					playSound(fertilize,100);
 				}
 				if ((character.getWater() == 4 && background.getFieldType(i, j) != 2)) {
 					character.setWater(0);
 				}
 				if(background.getFieldType(i, j) == 0 && background.getFieldLevel(i, j) == 3){
 					background.harvestCarrot(i, j);
-					playSound(harvestCarrot);
+					playSound(harvestCarrot,100);
 				}
 			}
 		}	
@@ -65,7 +73,13 @@ Character& World::getCharacter() {
 	return character;
 }
 
-void World::playSound(Sounds s) {
+void World::playSound(Sounds s,float v) {
 	sound.setBuffer(mSounds.get(s));
+	sound.setVolume(v);
 	sound.play();
+}
+void World::playSoundFoot(Sounds s, float v) {
+	soundFoot.setBuffer(mSounds.get(s));
+	soundFoot.setVolume(v);
+	soundFoot.play();
 }

@@ -24,6 +24,7 @@ public:
    int getWater();
    void setWater(int x);
    Animation animation;
+   int lastFrame;
 private:
    void setSpeed(sf::Vector2f speed);
    void setSpeed(float x, float y);
