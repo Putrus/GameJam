@@ -112,3 +112,11 @@ bool Field::fertilize() {
    }
    return false;
 }
+
+void Field::setType(int n) {
+   type = n;
+}
+
+void Field::updateTextureRect() {
+   setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
+}
