@@ -25,6 +25,7 @@ public:
    void setWater(int x);
    Animation animation;
    void setField(int x, int y);
+   int lastFrame;
    void setField(sf::Vector2i field);
    sf::Vector2i getField();
 private:

@@ -15,6 +15,7 @@ void Character::update(sf::Time dt) {
    animation.update(dt);
    setTextureRect(sf::IntRect(animation.getFrame() * 48, animation.getAnimation() * 48, 48, 48));
    setPosition(newX, newY);
+   lastFrame = animation.getFrame();
 }
 
 void Character::setSpeed(sf::Vector2f speed) {
