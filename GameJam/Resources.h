@@ -8,7 +8,9 @@ enum Textures {
    ground,
    groundEffects,
    farmer,
-   background
+   background,
+   rabbit,
+   panel
 };
 
 enum Fonts {

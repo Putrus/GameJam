@@ -48,6 +48,12 @@
     <ClInclude Include="Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SidePanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -69,6 +75,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SidePanel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
