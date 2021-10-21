@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.09/x64" 1634764027
+<REAPER_PROJECT 0.1 "6.09/x64" 1634808241
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,8 +15,8 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 233.94529131141147 0 0
-  VZOOMEX 2 763
+  ZOOM 348.16676559969937 0 0
+  VZOOMEX 1 638
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -27,7 +27,7 @@
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE "D:\GameJam\GameJam\Resources\Sound\SFX\EnteringWater\ReadyFile\enteringWater.wav"
+  RENDER_FILE "D:\GameJam\GameJam\Resources\Sound\SFX\EnteringWater\ReadyFile\enteringWater3.wav"
   RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 1 0 0 0 10
@@ -124,7 +124,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -171,7 +171,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -218,7 +218,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -265,7 +265,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -312,7 +312,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -359,7 +359,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -406,7 +406,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 60 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -453,7 +453,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -525,7 +525,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -572,7 +572,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -619,7 +619,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -666,7 +666,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -713,7 +713,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -760,7 +760,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -807,7 +807,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -854,7 +854,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -926,7 +926,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1064,7 +1064,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1111,7 +1111,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1183,7 +1183,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1230,7 +1230,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1277,7 +1277,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1324,7 +1324,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1371,7 +1371,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1418,7 +1418,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1465,7 +1465,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1512,7 +1512,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1584,7 +1584,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1595,7 +1595,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.336 0
@@ -1661,7 +1661,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1672,7 +1672,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 -0.272 0
@@ -1738,7 +1738,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1749,7 +1749,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 0
       DEFSHAPE 0 -1 -1
       PT 0 0 0
@@ -1797,7 +1797,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1822,7 +1822,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1872,7 +1872,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1919,7 +1919,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1930,7 +1930,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.472 0
@@ -2002,7 +2002,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2013,7 +2013,7 @@
     <PANENV
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.408 0
@@ -2101,7 +2101,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2112,7 +2112,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 42 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.328 0
@@ -2178,7 +2178,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2189,7 +2189,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.664 0
@@ -2245,7 +2245,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
@@ -2264,7 +2264,32 @@
     MIDIOUT -1
     MAINSEND 1 0
   >
-  <TRACK {B5E4FFD3-7DF6-438D-90E7-DCE3A81776DC}
+  <TRACK {790037AE-018F-4695-8DD7-75A2881809CA}
+    NAME "Entering Water 1"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 2 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {790037AE-018F-4695-8DD7-75A2881809CA}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {30C97B9D-D474-445E-A6FC-C146F4EE207F}
     NAME splash1
     PEAKCOL 16576
     BEAT -1
@@ -2284,7 +2309,7 @@
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {B5E4FFD3-7DF6-438D-90E7-DCE3A81776DC}
+    TRACKID {30C97B9D-D474-445E-A6FC-C146F4EE207F}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
@@ -2306,20 +2331,20 @@
       FADEOUT 1 0.265019 0 1 0 0
       MUTE 0
       SEL 0
-      IGUID {C65CE368-833E-4F1E-996D-6E8C27FE30D8}
+      IGUID {403E42A1-BB96-4ABC-9FF6-CAA3CD62D68A}
       IID 118
       NAME splash1.wav
       VOLPAN 0.634146 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {A26605DD-9A3C-49A5-8D6A-A0EE5F1E522E}
+      GUID {E331C0FC-F0A7-4D8A-BF34-BF99F44AC4D3}
       <SOURCE WAVE
         FILE "SFX\EnteringWater\RAW\splash1.wav"
       >
     >
   >
-  <TRACK {962D3B48-7F1A-4C8F-8D75-26EFD463E7C0}
+  <TRACK {8F7E499F-8892-4950-B362-ADA105438224}
     NAME splash2
     PEAKCOL 16576
     BEAT -1
@@ -2339,7 +2364,7 @@
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {962D3B48-7F1A-4C8F-8D75-26EFD463E7C0}
+    TRACKID {8F7E499F-8892-4950-B362-ADA105438224}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
@@ -2347,6 +2372,380 @@
       ACT 1 -1
       VIS 1 1 1
       LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.096 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.42317586066829
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.017098 0 1 0 0
+      FADEOUT 1 0.265019 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {42337FEB-6FAD-4FDC-AD8F-659668E66CB9}
+      IID 119
+      NAME splash2.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B2076A04-F591-4202-BE1D-43C58951603A}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\splash2.wav"
+      >
+    >
+  >
+  <TRACK {BF7A66E3-000A-4366-8F05-D52D7B17D51C}
+    NAME waterdrop1
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BF7A66E3-000A-4366-8F05-D52D7B17D51C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.112 0
+    >
+    <ITEM
+      POSITION 0.1838036566539
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C5F54884-DAEC-456D-B442-FEE6FF92ED9A}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.170732 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {645358E3-F630-4D2A-9019-6BD316CD0840}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.58133249546351
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {94814811-233A-4FF1-B55A-8CB6FC951D4B}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.365854 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {24223179-DD51-42F0-9C26-266698B6FBA4}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.9147437796264
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8D0D6946-7EE8-4DB2-A33D-F49852F159FF}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.084428 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5C1892E9-E66D-4EEF-845E-76C597C22449}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+    >
+  >
+  <TRACK {C89279E5-643A-4DF9-9F5A-E0CCB555411E}
+    NAME waterdrop2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.97780055932399 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C89279E5-643A-4DF9-9F5A-E0CCB555411E}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0 0
+    >
+    <ITEM
+      POSITION 0.4573718898132
+      SNAPOFFS 0
+      LENGTH 0.2356462585034
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F3F15CFB-5E46-4AC1-9701-20EC4DD730DB}
+      IID 122
+      NAME waterdrop2.wav
+      VOLPAN 0.422139 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C88D6AFA-AA21-4326-94CD-8392D6E4071C}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop2.wav"
+      >
+    >
+  >
+  <TRACK {CB1508A8-5F43-430F-849D-700DBD5BF179}
+    NAME waterdrop3
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.60115247317422 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CB1508A8-5F43-430F-849D-700DBD5BF179}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0 0
+    >
+    <ITEM
+      POSITION 0.37188181695092
+      SNAPOFFS 0
+      LENGTH 0.1747619047619
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8ED0A4E0-AC00-4BEC-A61C-78FCB4F8930E}
+      IID 123
+      NAME waterdrop3.wav
+      VOLPAN 0.675422 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {37D2C0AC-550F-4C37-9A83-B46E30338748}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.65399905739645
+      SNAPOFFS 0
+      LENGTH 0.1747619047619
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4EFE7211-1C9C-4D79-B126-6301218E80C4}
+      IID 123
+      NAME waterdrop3.wav
+      VOLPAN 0.225141 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B9167D35-3E9C-4E16-BB19-135631BA6B28}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
+      >
+    >
+  >
+  <TRACK {9115CB0E-3321-42D7-A28C-AF5EF6DCD45F}
+    NAME "Entering Water 2"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 2 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9115CB0E-3321-42D7-A28C-AF5EF6DCD45F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {B5E4FFD3-7DF6-438D-90E7-DCE3A81776DC}
+    NAME splash1
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B5E4FFD3-7DF6-438D-90E7-DCE3A81776DC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 1
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT -0 0.246 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.41386142302802
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.052116 0 1 0 0
+      FADEOUT 1 0.265019 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C65CE368-833E-4F1E-996D-6E8C27FE30D8}
+      IID 118
+      NAME splash1.wav
+      VOLPAN 0.634146 0 1 -1
+      SOFFS 0.04751742264396
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A26605DD-9A3C-49A5-8D6A-A0EE5F1E522E}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\splash1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 1.98 0
+      >
+    >
+  >
+  <TRACK {962D3B48-7F1A-4C8F-8D75-26EFD463E7C0}
+    NAME splash2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {962D3B48-7F1A-4C8F-8D75-26EFD463E7C0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 1
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.096 0
@@ -2372,6 +2771,14 @@
       <SOURCE WAVE
         FILE "SFX\EnteringWater\RAW\splash2.wav"
       >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 1.89 0
+      >
     >
   >
   <TRACK {B2172362-3521-4869-940C-485313DCF533}
@@ -2390,7 +2797,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0
+    TRACKHEIGHT 0 1 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2401,13 +2808,13 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 0
+      LANEHEIGHT 0 1
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.112 0
     >
     <ITEM
-      POSITION 0.1838036566539
+      POSITION 0.27333803480572
       SNAPOFFS 0
       LENGTH 0.24185941043084
       LOOP 1
@@ -2416,6 +2823,7 @@
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 0
+      GROUP 1
       IGUID {384996C4-6C8C-4CE6-8B19-94E8B323FB37}
       IID 121
       NAME waterdrop1.wav
@@ -2427,9 +2835,17 @@
       <SOURCE WAVE
         FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
       >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 -0.81 0
+      >
     >
     <ITEM
-      POSITION 0.58133249546351
+      POSITION 0.54558707345684
       SNAPOFFS 0
       LENGTH 0.24185941043084
       LOOP 1
@@ -2438,6 +2854,7 @@
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 0
+      GROUP 1
       IGUID {57F53D43-B60B-4739-895D-4800F7B74042}
       IID 121
       NAME waterdrop1.wav
@@ -2449,9 +2866,17 @@
       <SOURCE WAVE
         FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
       >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 0.3 0
+      >
     >
     <ITEM
-      POSITION 0.9147437796264
+      POSITION 0.81049169712067
       SNAPOFFS 0
       LENGTH 0.24185941043084
       LOOP 1
@@ -2460,16 +2885,25 @@
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 0
+      GROUP 1
       IGUID {252F3A85-F91B-441F-87F5-A86D1C9A588D}
       IID 121
       NAME waterdrop1.wav
-      VOLPAN 0.084428 0 1 -1
+      VOLPAN 0.146341 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {AEFF5B55-A25A-43E5-B0A4-4454E8D71DDC}
       <SOURCE WAVE
         FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 2.01 0
       >
     >
   >
@@ -2489,7 +2923,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0
+    TRACKHEIGHT 0 1 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2497,16 +2931,63 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <ITEM
+      POSITION 0.68363212713657
+      SNAPOFFS 0
+      LENGTH 0.1747619047619
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EE09DD5F-08B7-4601-8A57-A3D8DB40CBB8}
+      IID 123
+      NAME waterdrop3.wav
+      VOLPAN 0.658537 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E4BBEB0A-9BA0-4563-97D9-2BA120A47636}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
+      >
+    >
+  >
+  <TRACK {22271F65-47F2-4C68-B791-19152C8E4A45}
+    NAME waterdrop3
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.60115247317422 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {22271F65-47F2-4C68-B791-19152C8E4A45}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 0
+      LANEHEIGHT 0 1
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0 0
     >
     <ITEM
-      POSITION 0.4573718898132
+      POSITION 0.4138185387497
       SNAPOFFS 0
       LENGTH 0.2356462585034
       LOOP 1
@@ -2528,7 +3009,332 @@
       >
     >
   >
-  <TRACK {22271F65-47F2-4C68-B791-19152C8E4A45}
+  <TRACK {F816D0B9-3B3F-4CC7-B664-6F7D371CC9E2}
+    NAME "Entering Water 3"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 2 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F816D0B9-3B3F-4CC7-B664-6F7D371CC9E2}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {C9432510-2C13-4E92-AA7D-209751885E3D}
+    NAME splash1
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C9432510-2C13-4E92-AA7D-209751885E3D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 1
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.246 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.57339535513205
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.052116 0 1 0 0
+      FADEOUT 1 0.265019 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {12814F13-D257-454C-A139-71A8439D3B0F}
+      IID 118
+      NAME splash1.wav
+      VOLPAN 0.634146 0 1 -1
+      SOFFS 0.04751742264396
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B0EA952F-2F8A-4F4D-BC20-777CBCC76BCF}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\splash1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 -1.8 0
+      >
+    >
+  >
+  <TRACK {64AB237B-55CD-432E-AD2D-08959A9E4D15}
+    NAME splash2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {64AB237B-55CD-432E-AD2D-08959A9E4D15}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 1
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.096 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.57747646086252
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.017098 0 1 0 0
+      FADEOUT 1 0.265019 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {3765A77A-A0A7-471C-BB37-6C27CCBE40A8}
+      IID 119
+      NAME splash2.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B6EF7F7B-E5AF-47E6-889C-DE05D0306798}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\splash2.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 -0.15 0
+      >
+    >
+  >
+  <TRACK {77B0BD68-8CF7-48EA-BC28-F734FFD141F6}
+    NAME waterdrop1
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {77B0BD68-8CF7-48EA-BC28-F734FFD141F6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 1
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.112 0
+    >
+    <ITEM
+      POSITION 0.4142036145432
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      GROUP 2
+      IGUID {26758DDA-8A55-44D6-9042-CEDD8F4E7803}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.170732 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {855AA5DF-3B82-42F4-BBB9-6BA2DBEB7CC8}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 -0.81 0
+      >
+    >
+    <ITEM
+      POSITION 0.68645265319432
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      GROUP 2
+      IGUID {192F021E-C668-4067-A878-9AEF78B1B222}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.365854 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {30DBB3A0-EFB1-40F5-8C02-4D5507CA05FD}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 0.3 0
+        PT 0.14360934 0.3 0 0 1
+      >
+    >
+    <ITEM
+      POSITION 0.95135727685815
+      SNAPOFFS 0
+      LENGTH 0.24185941043084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      GROUP 2
+      IGUID {220A7152-9BEC-4638-B5CE-7E0A30949315}
+      IID 121
+      NAME waterdrop1.wav
+      VOLPAN 0.146341 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB91ABD6-5761-4066-A29B-7841C6B1E03C}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop1.wav"
+      >
+      <PITCHENV
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 0 0
+        ARM 0
+        DEFSHAPE 0 -1 -1
+        PT 0 2.01 0
+      >
+    >
+  >
+  <TRACK {556A72A0-DD01-4949-AED1-3C82D27F83EA}
+    NAME waterdrop2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.97780055932399 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {556A72A0-DD01-4949-AED1-3C82D27F83EA}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.84442292903402
+      SNAPOFFS 0
+      LENGTH 0.1747619047619
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {909969BF-EE72-42C7-84B9-91BFE08489A0}
+      IID 123
+      NAME waterdrop3.wav
+      VOLPAN 0.658537 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {63EC94C3-04E8-4B98-AD4D-9D3CAB0CD0FF}
+      <SOURCE WAVE
+        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
+      >
+    >
+  >
+  <TRACK {1601096F-5315-4094-8F98-824C27E5D3B8}
     NAME waterdrop3
     PEAKCOL 16576
     BEAT -1
@@ -2541,67 +3347,45 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0
+    TRACKHEIGHT 0 1 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {22271F65-47F2-4C68-B791-19152C8E4A45}
+    TRACKID {1601096F-5315-4094-8F98-824C27E5D3B8}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 0
+      LANEHEIGHT 0 1
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0 0
     >
     <ITEM
-      POSITION 0.37188181695092
+      POSITION 0.54284331152187
       SNAPOFFS 0
-      LENGTH 0.1747619047619
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {EE09DD5F-08B7-4601-8A57-A3D8DB40CBB8}
-      IID 123
-      NAME waterdrop3.wav
-      VOLPAN 0.675422 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {E4BBEB0A-9BA0-4563-97D9-2BA120A47636}
-      <SOURCE WAVE
-        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
-      >
-    >
-    <ITEM
-      POSITION 0.65399905739645
-      SNAPOFFS 0
-      LENGTH 0.1747619047619
+      LENGTH 0.2356462585034
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 1
-      IGUID {595680F2-1F61-46CC-BEDB-2F95AA1EE1A7}
-      IID 123
-      NAME waterdrop3.wav
-      VOLPAN 0.225141 0 1 -1
+      IGUID {0F41790B-6097-4A4C-A03C-0CF7DD2418EC}
+      IID 122
+      NAME waterdrop2.wav
+      VOLPAN 0.422139 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {D3A14B01-4F2A-48B1-A9DF-2239425A37F0}
+      GUID {97A1DAD4-D689-4D8D-81AD-C3698297B666}
       <SOURCE WAVE
-        FILE "SFX\EnteringWater\RAW\waterdrop3.wav"
+        FILE "SFX\EnteringWater\RAW\waterdrop2.wav"
       >
     >
   >
@@ -2646,7 +3430,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2693,7 +3477,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2740,7 +3524,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2787,7 +3571,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2859,7 +3643,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2886,7 +3670,7 @@
       CHANMODE 0
       GUID {27D6CAC6-C023-4F96-A562-7CC599B3A811}
       <SOURCE WAVE
-        FILE "SFX\MonsterFootsteps\step2.wav"
+        FILE "SFX\MonsterFootsteps\RAW\step2.wav"
       >
     >
   >
@@ -2906,7 +3690,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2933,7 +3717,7 @@
       CHANMODE 0
       GUID {76075C39-6774-4403-B922-9FBD224DED2A}
       <SOURCE WAVE
-        FILE "SFX\MonsterFootsteps\step3.wav"
+        FILE "SFX\MonsterFootsteps\RAW\step3.wav"
       >
     >
   >
@@ -2953,7 +3737,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2980,7 +3764,7 @@
       CHANMODE 0
       GUID {2B58F532-EDA1-4D10-9AE2-787BCA731820}
       <SOURCE WAVE
-        FILE "SFX\MonsterFootsteps\step4.wav"
+        FILE "SFX\MonsterFootsteps\RAW\step4.wav"
       >
     >
   >
@@ -3000,7 +3784,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3027,7 +3811,7 @@
       CHANMODE 0
       GUID {FA764781-7F34-4EC8-8029-F53B3F3A2D9C}
       <SOURCE WAVE
-        FILE "SFX\MonsterFootsteps\step1.wav"
+        FILE "SFX\MonsterFootsteps\RAW\step1.wav"
       >
     >
   >
@@ -3072,7 +3856,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3119,7 +3903,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3166,7 +3950,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3213,7 +3997,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3295,7 +4079,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3306,7 +4090,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 -0.136 0
@@ -3365,14 +4149,14 @@
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
-    ISBUS 2 -1
+    ISBUS 2 -2
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0
+    TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3383,7 +4167,7 @@
     <PANENV2
       ACT 1 -1
       VIS 1 1 1
-      LANEHEIGHT 0 1
+      LANEHEIGHT 0 0
       ARM 1
       DEFSHAPE 0 -1 -1
       PT 0 0.256 0
