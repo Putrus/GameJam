@@ -13,7 +13,8 @@ public:
    sf::Vector2i checkField(Character& character);
    void playSound(Sounds s, float v);
    int carrotAmount = 0;
-   sf::Text  carrotText;
+   sf::Text carrotText;
+   sf::Text priceCarrotText, priceDigText, priceLiliesText, priceFertilizeText, priceWaterText, priceTurretText, priceSpeedText;
 private:
    void loadTextures();
    void loadSounds();

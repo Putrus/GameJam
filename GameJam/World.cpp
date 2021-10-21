@@ -8,12 +8,55 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
 	character.playerControl(true);
+	
 	carrotText.setFont(mFontCarrot.get(carrotFont));
 	carrotText.setPosition(1670.0f, 180.0f);
 	carrotText.setCharacterSize(40);
 	carrotText.setString(std::to_string(carrotAmount));
 	carrotText.setFillColor(sf::Color::Black);
 	srand(time(NULL));
+	priceCarrotText.setFillColor(sf::Color(0, 0, 0));
+	priceCarrotText.setFont(mFontCarrot.get(carrotFont));
+	priceCarrotText.setPosition(1535.0f, 358.0f);
+	priceCarrotText.setCharacterSize(23);
+	priceCarrotText.setString("1");
+
+	priceDigText.setFillColor(sf::Color(0, 0, 0));
+	priceDigText.setFont(mFontCarrot.get(carrotFont));
+	priceDigText.setPosition(1535.0f, 463.0f);
+	priceDigText.setCharacterSize(23);
+	priceDigText.setString("10");
+
+	priceLiliesText.setFillColor(sf::Color(0, 0, 0));
+	priceLiliesText.setFont(mFontCarrot.get(carrotFont));
+	priceLiliesText.setPosition(1535.0f, 568.0f);
+	priceLiliesText.setCharacterSize(23);
+	priceLiliesText.setString("20");
+
+	priceFertilizeText.setFillColor(sf::Color(0, 0, 0));
+	priceFertilizeText.setFont(mFontCarrot.get(carrotFont));
+	priceFertilizeText.setPosition(1535.0f, 673.0f);
+	priceFertilizeText.setCharacterSize(23);
+	priceFertilizeText.setString("1");
+
+	priceWaterText.setFillColor(sf::Color(0, 0, 0));
+	priceWaterText.setFont(mFontCarrot.get(carrotFont));
+	priceWaterText.setPosition(1535.0f, 778.0f);
+	priceWaterText.setCharacterSize(23);
+	priceWaterText.setString("50");
+
+	priceTurretText.setFillColor(sf::Color(0, 0, 0));
+	priceTurretText.setFont(mFontCarrot.get(carrotFont));
+	priceTurretText.setPosition(1535.0f, 883.0f);
+	priceTurretText.setCharacterSize(23);
+	priceTurretText.setString("100");
+
+	priceSpeedText.setFillColor(sf::Color(0, 0, 0));
+	priceSpeedText.setFont(mFontCarrot.get(carrotFont));
+	priceSpeedText.setPosition(1535.0f, 988.0f);
+	priceSpeedText.setCharacterSize(23);
+	priceSpeedText.setString("99999");
+	
 	for (int i = 0; i < 2; ++i) {
 		int x = std::rand() % 7 + i;
 		int y = std::rand() % 7 + i;
@@ -21,6 +64,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 		rabbits[i].first.setVelocity(50.0f);
 		rabbits[i].first.setPosition(864, 438);
 		rabbits[i].first.setTexture(mTextures.get(Textures::rabbit));
+
 	}
 }
 
@@ -34,8 +78,16 @@ void World::draw() {
 	mWindow.draw(character);
 	sidePanel.draw(mWindow);
 	mWindow.draw(carrotText);
+	mWindow.draw(priceCarrotText);
+	mWindow.draw(priceDigText);
+	mWindow.draw(priceLiliesText);
+	mWindow.draw(priceFertilizeText);
+	mWindow.draw(priceWaterText);
+	mWindow.draw(priceTurretText);
+	mWindow.draw(priceSpeedText);
 	for (int i = 0; i < rabbits.size(); ++i) {
 		mWindow.draw(rabbits[i].first);
+
 	}
 }
 
