@@ -13,10 +13,10 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	carrotText.setCharacterSize(40);
 	carrotText.setString(std::to_string(carrotAmount));
 	carrotText.setFillColor(sf::Color::Black);
-	
+	srand(time(NULL));
 	for (int i = 0; i < 2; ++i) {
-		int x = std::rand() % 7 + 0;
-		int y = std::rand() % 7 + 9;
+		int x = std::rand() % 7 + i;
+		int y = std::rand() % 7 + i;
 		rabbits.push_back({ Character(), sf::Vector2i(x, y) });
 		rabbits[i].first.setVelocity(50.0f);
 		rabbits[i].first.setPosition(864, 438);

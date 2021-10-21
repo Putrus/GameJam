@@ -46,7 +46,7 @@ SidePanel::~SidePanel() {
 
 bool SidePanel::check(int n) {
 	if (panels[n]->getIsActive()) {
-		checkPanel->setPosition(checkPanel->getPosition().x, panels[1]->getPosition().y + ((n - 1) * 99));
+		checkPanel->setPosition(checkPanel->getPosition().x, panels[1]->getPosition().y + ((n - 1) * 105));
 		return true;
 	}
 	return false;
