@@ -24,7 +24,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 		rabbits[i].first.setTexture(mTextures.get(Textures::rabbit));
 	}
 	tut.setTexture(mTextures.get(Textures::tut));
-	tut.setPosition(50, 50);
+	tut.setPosition(0, 50);
 }
 
 void World::update(sf::Time dt) {
