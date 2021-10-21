@@ -101,5 +101,5 @@ void Game::render()
 }
 
 void Game::fastUpdate() {
-	mWorld.checkWater();
+	mWorld.checkFieldType();
 }

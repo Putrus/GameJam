@@ -14,6 +14,9 @@ public:
 	void setPosition2(float x, float y);
 	bool isWater();
 	int getType();
+	int getLevel();
+	void setLevel(int lvl);
+	void harvestCarrot();
 private:
 	
 public: 

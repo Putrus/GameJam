@@ -53,3 +53,15 @@ int Background::getFieldType(int x, int y) {
 sf::Vector2f Background::getFieldPosition(int x, int y) {
 	return fields[x][y]->getPosition();
 }
+
+int Background::getFieldLevel(int x, int y) {
+	return fields[x][y]->getLevel();
+}
+
+void Background::setFieldLevel(int x, int y, int lvl) {
+	fields[x][y]->setLevel(lvl);
+}
+
+void Background::harvestCarrot(int x, int y) {
+	fields[x][y]->harvestCarrot();
+}

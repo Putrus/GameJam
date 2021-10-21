@@ -9,15 +9,20 @@ public:
    void update(sf::Time dt);
    void draw();
    Character& getCharacter();
-   void checkWater();
+   void checkFieldType();
 
 private:
    void loadTextures();
+   void loadSounds();
    void buildScene();
+   void playSound(Sounds s);
 
 private:
    Character character;
    sf::RenderWindow& mWindow;
+   sf::Sound sound;
    TextureHolder mTextures;
+   SoundHolder mSounds;
    Background background;
+
 };

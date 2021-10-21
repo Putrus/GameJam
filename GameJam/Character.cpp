@@ -1,6 +1,6 @@
 #include "Character.h"
 #include "math.h"
-#include "World.h"
+
 Character::Character(sf::Vector2f position, float v) : isFront(true), velocity(v), isRight(true){
    setPosition(position);
 }
@@ -12,7 +12,6 @@ void Character::update(sf::Time dt) {
    animation.update(dt);
    setTextureRect(sf::IntRect(animation.getFrame() * 48, animation.getAnimation() * 48, 48, 48));
    setPosition(newX, newY);
-   
 }
 
 void Character::setSpeed(sf::Vector2f speed) {
@@ -55,7 +54,7 @@ void Character::move(Move move) {
       break;
    case Stop:
       setSpeed(0.0f, 0.0f);
-	  if (isRight = 1) {
+	  if (isRight) {
 		  if (isInWater > 0) {
 			  animation.setAnimation(4);
 		  }

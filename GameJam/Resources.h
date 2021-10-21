@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 #include "ResourceHolder.h"
 
@@ -15,7 +16,19 @@ enum Fonts {
    f3
 };
 
+enum Sounds {
+   playerFootsteps1,
+   playerFootsteps2,
+   playerFootsteps3,
+   playerFootsteps4,
+   fertilize,
+   enteringWater,
+   harvestCarrot
+};
+
 //enum Sound
 typedef ResourceHolder<sf::Texture, Textures> TextureHolder;
 
 typedef ResourceHolder<sf::Font, Fonts> FontHolder;
+
+typedef ResourceHolder<sf::SoundBuffer, Sounds> SoundHolder;

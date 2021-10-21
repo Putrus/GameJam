@@ -19,7 +19,6 @@ Field::~Field() {
 }
 
 void Field::update(sf::Time& dt) {
-   
    if (animate) {
       aEffect.update(dt);
       effect->setTextureRect(sf::IntRect(aEffect.getFrame()*96, aEffect.getAnimation() *96, 96, 96));
@@ -55,3 +54,16 @@ int Field::getType() {
    return type;
 }
 
+int Field::getLevel() {
+   return lvl;
+}
+
+void Field::setLevel(int lvl) {
+   this->lvl = lvl;
+}
+
+void Field::harvestCarrot() {
+   setLevel(0);
+   setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
+   animate = false;
+}
