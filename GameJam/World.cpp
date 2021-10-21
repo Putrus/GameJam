@@ -3,9 +3,16 @@
 World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
 	loadSounds();
+	loadFonts();
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
+	carrotText.setFillColor(sf::Color::Green);
+	carrotText.setFont(mFontCarrot.get(carrotFont));
+	carrotText.setPosition(1644.0f, 175.0f);
+	carrotText.setCharacterSize(24);
+	carrotText.setString("9999");
+	
 }
 
 void World::update(sf::Time dt) {
@@ -32,12 +39,14 @@ void World::update(sf::Time dt) {
 		background.harvestCarrot(chField.x, chField.y);
 		playSound(harvestCarrot, 100.0f);
 	}
+	carrotText.setString("9999");	
 }
 
 void World::draw() {
 	background.draw(mWindow);
 	mWindow.draw(character);
 	sidePanel.draw(mWindow);
+	mWindow.draw(carrotText);
 }
 
 void World::loadTextures() {
@@ -61,6 +70,10 @@ void World::loadSounds() {
 	mSounds.load(Sounds::plantCarrots2, "Resources/Sound/plantCarrots2.wav");
 	mSounds.load(Sounds::plantCarrots3, "Resources/Sound/plantCarrots3.wav");
 	mSounds.load(Sounds::plantCarrots4, "Resources/Sound/plantCarrots4.wav");
+}
+
+void World::loadFonts() {
+	mFontCarrot.load(Fonts::carrotFont, "Resources/Font/pixel.ttf");
 }
 
 void World::buildScene() {
