@@ -19,6 +19,7 @@ public:
 	void growUp(int x, int y);
 	bool plantCarrot(int x, int y);
 	bool fertilize(int x, int y);
+	bool eatCarrot(int x, int y);
 private:
 	std::vector <std::vector<Field*>> fields;
 	sf::Sprite bground;

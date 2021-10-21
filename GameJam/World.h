@@ -22,6 +22,9 @@ private:
    void buildScene();
    void playSoundFoot(Sounds s, float v);
 
+   void playerUpdate(sf::Time& dt);
+   void rabbitsUpdate(sf::Time& dt);
+
 private:
    Character character;
    Background background;
@@ -29,8 +32,9 @@ private:
    sf::RenderWindow& mWindow;
    sf::Sound sound;
    sf::Sound soundFoot;
-   std::vector<Character> rabbits;
    TextureHolder mTextures;
    SoundHolder mSounds;
    FontHolder mFontCarrot;   
+   
+   std::vector<std::pair<Character, sf::Vector2i>> rabbits;
 };

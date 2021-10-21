@@ -20,6 +20,7 @@ public:
 	void growUp();
 	bool plantCarrot();
 	bool fertilize();
+	bool eatCarrot();
 	void setType(int n);
 	void updateTextureRect();
 private:

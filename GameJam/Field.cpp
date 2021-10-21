@@ -120,3 +120,13 @@ void Field::setType(int n) {
 void Field::updateTextureRect() {
    setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
 }
+
+bool Field::eatCarrot() {
+   if (getType() == 0 && getLevel() == 3) {
+      setLevel(3);
+      setType(1);
+      animate = false;
+      return true;
+   }
+   return false;
+}

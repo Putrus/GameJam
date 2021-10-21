@@ -7,12 +7,13 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
+	character.playerControl(true);
 	
-	carrotText.setFillColor(sf::Color(0, 0, 0));
 	carrotText.setFont(mFontCarrot.get(carrotFont));
 	carrotText.setPosition(1670.0f, 180.0f);
 	carrotText.setCharacterSize(40);
 	carrotText.setString(std::to_string(carrotAmount));
+	carrotText.setFillColor(sf::Color::Black);
 
 	priceCarrotText.setFillColor(sf::Color(0, 0, 0));
 	priceCarrotText.setFont(mFontCarrot.get(carrotFont));
@@ -56,73 +57,20 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	priceSpeedText.setCharacterSize(23);
 	priceSpeedText.setString("99999");
 	
-	for (int i = 0; i < 10; ++i) {
-		rabbits.push_back(Character());
-		int x = std::rand() % 300 + 200;
-		int y = std::rand() % 300 + 200;
-		rabbits[i].setPosition(x + 576, y);
-		rabbits[i].setTexture(mTextures.get(Textures::rabbit));
+	for (int i = 0; i < 2; ++i) {
+		int x = std::rand() % 7 + 0;
+		int y = std::rand() % 7 + 9;
+		rabbits.push_back({ Character(), sf::Vector2i(x, y) });
+		rabbits[i].first.setVelocity(50.0f);
+		rabbits[i].first.setPosition(864, 438);
+		rabbits[i].first.setTexture(mTextures.get(Textures::rabbit));
+
 	}
 }
 
 void World::update(sf::Time dt) {
-	character.update(dt);
-	background.update(dt);
-	character.setField(checkField(character));
-	sf::Vector2i chField = character.getField();
-	if ((background.getFieldType(chField.x, chField.y) == 2 && character.getWater() != 4)) {
-		character.setWater(4);
-		playSound(enteringWater, 100.0f);
-	}
-	if ((character.getWater() == 4 && background.getFieldType(chField.x, chField.y) != 2)) {
-		character.setWater(0);
-	}
-	if (character.animation.getAnimation() < 4) {
-		if (character.lastFrame != 0) {
-			if (character.animation.getFrame() == 2) {
-				playSoundFoot(playerFootsteps1,50);
-			}
-		}
-	}
-	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
-		background.harvestCarrot(chField.x, chField.y);
-		carrotAmount += 1;
-		carrotText.setString(std::to_string(carrotAmount));
-		playSound(harvestCarrot, 100.0f);
-	}
-	for (size_t i = 0; i < rabbits.size(); ++i) {	
-		sf::Vector2i rField = rabbits[i].getField();
-		sf::Vector2i closeFieldWithCarrot(3, 3);
-		int min = 100;
-		for (size_t i = 0; i < 8; i++) {
-			for (size_t j = 0; j < 8; j++) {
-				if (background.getFieldType(i, j) == 0 && background.getFieldLevel(i, j) == 3) {
-					if (std::abs(int(rField.x - i)) + std::abs(int(rField.y - j)) < min) {
-						min = std::abs(int(rField.x - i)) + std::abs(int(rField.y - j));
-						if (min != 0) {
-							closeFieldWithCarrot = sf::Vector2i(i, j);
-						}
-					}
-				}
-			}
-		}
-		if (closeFieldWithCarrot.x > rField.x) {
-			rabbits[i].move(Down);
-		}
-		
-		if (closeFieldWithCarrot.x < rField.x) {
-			rabbits[i].move(Up);
-		}
-
-		if (closeFieldWithCarrot.y < rField.y) {
-			rabbits[i].move(Left);
-		}
-
-		if (closeFieldWithCarrot.y > rField.y) {
-			rabbits[i].move(Right);
-		}
-		rabbits[i].update(dt);
-	}
+	playerUpdate(dt);
+	rabbitsUpdate(dt);
 }
 
 void World::draw() {
@@ -137,8 +85,9 @@ void World::draw() {
 	mWindow.draw(priceWaterText);
 	mWindow.draw(priceTurretText);
 	mWindow.draw(priceSpeedText);
-	for (int i = 0; i < 10; ++i) {
-		mWindow.draw(rabbits[i]);
+	for (int i = 0; i < rabbits.size(); ++i) {
+		mWindow.draw(rabbits[i].first);
+
 	}
 }
 
@@ -146,7 +95,7 @@ void World::loadTextures() {
 	mTextures.load(Textures::ground, "Resources/Textures/ground.png");
 	mTextures.load(Textures::farmer, "Resources/Textures/farmer.png");
 	mTextures.load(Textures::groundEffects, "Resources/Textures/groundEffects.png");
-	mTextures.load(Textures::background, "Resources/Textures/background.png");
+	mTextures.load(Textures::background, "Resources/Textures/btest.png");
 	mTextures.load(Textures::rabbit, "Resources/Textures/rabbit.png");
 	mTextures.load(Textures::panel, "Resources/Textures/panel.png");
 }
@@ -210,4 +159,70 @@ Background& World::getBackground() {
 
 SidePanel& World::getSidePanel() {
 	return sidePanel;
+}
+
+void World::playerUpdate(sf::Time& dt) {
+	character.update(dt);
+	background.update(dt);
+	character.setField(checkField(character));
+	sf::Vector2i chField = character.getField();
+	if ((background.getFieldType(chField.x, chField.y) == 2 && character.getWater() != 4)) {
+		character.setWater(4);
+		playSound(enteringWater, 100.0f);
+	}
+	if ((character.getWater() == 4 && background.getFieldType(chField.x, chField.y) != 2)) {
+		character.setWater(0);
+	}
+	if (character.animation.getAnimation() < 4) {
+		if (character.lastFrame != 0) {
+			if (character.animation.getFrame() == 2) {
+				playSoundFoot(playerFootsteps1, 50);
+			}
+		}
+	}
+	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
+		background.harvestCarrot(chField.x, chField.y);
+		carrotAmount += 1;
+		carrotText.setString(std::to_string(carrotAmount));
+		playSound(harvestCarrot, 100.0f);
+	}
+}
+
+void World::rabbitsUpdate(sf::Time& dt) {
+	for (size_t i = 0; i < rabbits.size(); ++i) {
+		sf::Vector2i rField = checkField(rabbits[i].first);
+		sf::Vector2i closeFieldWithCarrot(3, 3);
+		int min = 100;
+		for (size_t x = 0; x < 8; x++) {
+			for (size_t y = 0; y < 8; y++) {
+				if (background.getFieldType(x, y) == 0 && background.getFieldLevel(x, y) == 3) {
+					if (std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y)) < min) {
+						min = std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y));
+						closeFieldWithCarrot = sf::Vector2i(x, y);
+					}
+				}
+			}
+		}
+		if (closeFieldWithCarrot.x > rField.x) {
+			rabbits[i].first.move(Right);
+		}
+
+		if (closeFieldWithCarrot.x < rField.x) {
+			rabbits[i].first.move(Left);
+		}
+
+		if (closeFieldWithCarrot.y < rField.y) {
+			rabbits[i].first.move(Up);
+		}
+
+		if (closeFieldWithCarrot.y > rField.y) {
+			rabbits[i].first.move(Down);
+		}
+
+		if (closeFieldWithCarrot == rField) {
+			background.eatCarrot(rField.x, rField.y);
+			rabbits[i].first.move(Stop);
+		}
+		rabbits[i].first.update(dt);
+	}
 }
