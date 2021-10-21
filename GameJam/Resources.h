@@ -10,7 +10,8 @@ enum Textures {
    farmer,
    background,
    rabbit,
-   panel
+   panel,
+   tut
 };
 
 enum Fonts {

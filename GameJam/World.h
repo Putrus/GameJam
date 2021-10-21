@@ -41,4 +41,5 @@ private:
    SoundHolder mSounds;
    FontHolder mFontCarrot;   
    std::vector<std::pair<Character, sf::Vector2i>> rabbits;
+   sf::Sprite tut;
 };

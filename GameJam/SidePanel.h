@@ -7,6 +7,7 @@ public:
    void draw(sf::RenderWindow& window);
    void initialize(TextureHolder& textures);
    bool check(int n);
+   int checked();
 private:
 
 public:

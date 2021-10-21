@@ -23,7 +23,8 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 		rabbits[i].first.setPosition(864, 438);
 		rabbits[i].first.setTexture(mTextures.get(Textures::rabbit));
 	}
-	
+	tut.setTexture(mTextures.get(Textures::tut));
+	tut.setPosition(50, 50);
 }
 
 void World::update(sf::Time dt) {
@@ -31,6 +32,7 @@ void World::update(sf::Time dt) {
 	rabbitsUpdate(dt);
 	aCarrotText.setString(std::to_string(seeds));
 	aDigText.setString(std::to_string(dig));
+	carrotText.setString(std::to_string(carrotAmount));
 }
 
 void World::draw() {
@@ -46,9 +48,10 @@ void World::draw() {
 	mWindow.draw(priceTurretText);
 	mWindow.draw(priceSpeedText);
 	mWindow.draw(aCarrotText);
+	mWindow.draw(aDigText);
+	mWindow.draw(tut);
 	for (int i = 0; i < rabbits.size(); ++i) {
 		mWindow.draw(rabbits[i].first);
-
 	}
 }
 
@@ -59,6 +62,7 @@ void World::loadTextures() {
 	mTextures.load(Textures::background, "Resources/Textures/btest.png");
 	mTextures.load(Textures::rabbit, "Resources/Textures/rabbit.png");
 	mTextures.load(Textures::panel, "Resources/Textures/panel.png");
+	mTextures.load(Textures::tut, "Resources/Textures/tut.png");
 }
 
 void World::loadSounds() {
@@ -209,6 +213,12 @@ void World::initializeText() {
 	aCarrotText.setPosition(1900.0f, 358.0f);
 	aCarrotText.setCharacterSize(23);
 	aCarrotText.setString(std::to_string(seeds));
+
+	aDigText.setFillColor(sf::Color(0, 0, 0));
+	aDigText.setFont(mFontCarrot.get(carrotFont));
+	aDigText.setPosition(1900.0f, 463.0f);
+	aDigText.setCharacterSize(23);
+	aDigText.setString(std::to_string(dig));
 	
 	priceCarrotText.setFillColor(sf::Color(0, 0, 0));
 	priceCarrotText.setFont(mFontCarrot.get(carrotFont));

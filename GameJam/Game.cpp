@@ -73,6 +73,23 @@ void Game::processEvents()
 					mWorld.dig--;
 				}
 			}
+			if (event.key.code == sf::Keyboard::B) {
+				switch (sidePanel.checked())
+				{
+				case 1:
+					if (mWorld.carrotAmount > mWorld.seeds) {
+						mWorld.seeds += 5;
+						mWorld.carrotAmount -= 5;
+					}
+					break;
+				case 2:
+					if (mWorld.carrotAmount > mWorld.dig) {
+						mWorld.dig += 5;
+						mWorld.carrotAmount -= 10;
+					}
+					break;
+				}
+			}
 			if (event.key.code == sf::Keyboard::Num1) {
 				sidePanel.check(1);
 			}

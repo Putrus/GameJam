@@ -52,3 +52,7 @@ bool SidePanel::check(int n) {
 	}
 	return false;
 }
+
+int SidePanel::checked() {
+	return checkPanel->nr;
+}
