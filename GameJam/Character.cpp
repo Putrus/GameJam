@@ -5,7 +5,7 @@ Character::Character(sf::Vector2f position, float v) : isFront(true), velocity(v
    setPosition(position);
 	actualField = sf::Vector2i(0, 0);
 	isInWater = 0;
-	setPosition(576.0f, 156.0f);
+	setPosition(576.0f, 180.0f);
 }
 
 void Character::update(sf::Time dt) {

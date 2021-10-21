@@ -42,7 +42,7 @@ void World::loadTextures() {
 	mTextures.load(Textures::ground, "Resources/Textures/ground.png");
 	mTextures.load(Textures::farmer, "Resources/Textures/farmer.png");
 	mTextures.load(Textures::groundEffects, "Resources/Textures/groundEffects.png");
-	mTextures.load(Textures::background, "Resources/Textures/b.png");
+	mTextures.load(Textures::background, "Resources/Textures/background.png");
 }
 
 void World::loadSounds() {

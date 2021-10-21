@@ -26,7 +26,7 @@ void Background::initialize(TextureHolder& textures) {
 			Field* field = new Field(x, y);
 			field->setTexture(textures.get(Textures::ground));
 			field->setEffectTexture(textures.get(Textures::groundEffects));
-			field->setPosition2(float(i * 96 + 576), float(j * 96 + 156));
+			field->setPosition2(float(i * 96 + 576), float(j * 96 + 205));
 			fields[i].push_back(field);
 		}
 	}
@@ -42,7 +42,6 @@ Background::~Background() {
 	}
 }
 void Background::draw(sf::RenderWindow& window) {
-	window.draw(bground);
 	for (size_t i = 0; i < fields.size(); ++i) {
 		for (size_t j = 0; j < fields.size(); ++j) {
 			window.draw(*fields[i][j]);
@@ -51,6 +50,7 @@ void Background::draw(sf::RenderWindow& window) {
 			}
 		}
 	}	
+	window.draw(bground);
 }
 
 void Background::update(sf::Time& dt) {
