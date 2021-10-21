@@ -5,7 +5,7 @@ Character::Character(sf::Vector2f position, float v) : isFront(true), velocity(v
    setPosition(position);
 	actualField = sf::Vector2i(0, 0);
 	isInWater = 0;
-	setPosition(576.0f, 180.0f);
+	setPosition(900.0f, 300.0f);
 }
 
 void Character::update(sf::Time dt) {
@@ -14,8 +14,14 @@ void Character::update(sf::Time dt) {
      
    animation.update(dt);
    setTextureRect(sf::IntRect(animation.getFrame() * 48, animation.getAnimation() * 48, 48, 48));
-   setPosition(newX, newY);
+   if ((newX < 1300 && newX > 564) && (newY + 40 > 205 && newY < 910)) {
+	   if (!((newX > 864 - 40 && newX < 1058 - 12) && (newY > 493 - 47 && newY < 687 - 47))) {
+		   setPosition(newX, newY);
+	   }
+	   
+   }
    lastFrame = animation.getFrame();
+
 }
 
 void Character::setSpeed(sf::Vector2f speed) {
