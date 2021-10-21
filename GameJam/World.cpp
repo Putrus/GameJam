@@ -7,11 +7,11 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
-	carrotText.setFillColor(sf::Color::Green);
+	carrotText.setFillColor(sf::Color(0, 0, 0));
 	carrotText.setFont(mFontCarrot.get(carrotFont));
-	carrotText.setPosition(1644.0f, 175.0f);
-	carrotText.setCharacterSize(24);
-	carrotText.setString("9999");
+	carrotText.setPosition(1670.0f, 180.0f);
+	carrotText.setCharacterSize(40);
+	carrotText.setString(std::to_string(carrotAmount));
 	
 	for (int i = 0; i < 10; ++i) {
 		rabbits.push_back(Character());
@@ -43,10 +43,11 @@ void World::update(sf::Time dt) {
 	}
 	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
 		background.harvestCarrot(chField.x, chField.y);
+		carrotAmount += 1;
+		carrotText.setString(std::to_string(carrotAmount));
 		playSound(harvestCarrot, 100.0f);
 	}
-	for (size_t i = 0; i < rabbits.size(); ++i) {
-	carrotText.setString("9999");	
+	for (size_t i = 0; i < rabbits.size(); ++i) {	
 		sf::Vector2i rField = rabbits[i].getField();
 		sf::Vector2i closeFieldWithCarrot(3, 3);
 		int min = 100;
