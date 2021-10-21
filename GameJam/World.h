@@ -1,8 +1,7 @@
 #pragma once
-#include "Resources.h"
 #include "Background.h"
 #include "Character.h"
-#include <vector>
+#include "SidePanel.h"
 class World : sf::NonCopyable{
 public:
    World(sf::RenderWindow& window);
@@ -28,4 +27,5 @@ private:
    SoundHolder mSounds;
    Background background;
    std::vector<Character> rabbits;
+   SidePanel sidePanel;
 };

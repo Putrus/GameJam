@@ -4,6 +4,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
 	loadSounds();
 	background.initialize(mTextures);
+	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
 }
 
@@ -36,6 +37,7 @@ void World::update(sf::Time dt) {
 void World::draw() {
 	background.draw(mWindow);
 	mWindow.draw(character);
+	sidePanel.draw(mWindow);
 }
 
 void World::loadTextures() {
