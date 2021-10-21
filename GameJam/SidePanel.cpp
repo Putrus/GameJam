@@ -13,7 +13,7 @@ void SidePanel::initialize(TextureHolder& textures) {
 	checkPanel = new Panel();
 	for (size_t i = 0; i < 8; ++i) {
 			Panel* panel = new Panel();
-			int y = i * 99 + 200;
+			int y = i * 105 + 200;
 			if (i == 0) {
 				y = 132;
 			}

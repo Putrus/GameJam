@@ -119,6 +119,8 @@ bool Background::eatCarrot(int x, int y) {
 	bool s = fields[x][y]->eatCarrot();
 	if (s) {
 		fields[x][y]->updateTextureRect();
+		fields[x][y + 1]->setLevel(fields[x][y]->getType());
+		fields[x][y + 1]->updateTextureRect();
 	}
 	return s;
 }

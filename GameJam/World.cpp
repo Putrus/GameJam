@@ -12,78 +12,21 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	carrotText.setPosition(1670.0f, 180.0f);
 	carrotText.setCharacterSize(40);
 	carrotText.setString(std::to_string(carrotAmount));
+	carrotText.setFillColor(sf::Color::Black);
 	
-	for (int i = 0; i < 10; ++i) {
+	for (int i = 0; i < 2; ++i) {
 		int x = std::rand() % 7 + 0;
 		int y = std::rand() % 7 + 9;
 		rabbits.push_back({ Character(), sf::Vector2i(x, y) });
-		
+		rabbits[i].first.setVelocity(50.0f);
 		rabbits[i].first.setPosition(864, 438);
 		rabbits[i].first.setTexture(mTextures.get(Textures::rabbit));
 	}
 }
 
 void World::update(sf::Time dt) {
-	character.update(dt);
-	background.update(dt);
-	character.setField(checkField(character));
-	sf::Vector2i chField = character.getField();
-	if ((background.getFieldType(chField.x, chField.y) == 2 && character.getWater() != 4)) {
-		character.setWater(4);
-		playSound(enteringWater, 100.0f);
-	}
-	if ((character.getWater() == 4 && background.getFieldType(chField.x, chField.y) != 2)) {
-		character.setWater(0);
-	}
-	if (character.animation.getAnimation() < 4) {
-		if (character.lastFrame != 0) {
-			if (character.animation.getFrame() == 2) {
-				playSoundFoot(playerFootsteps1,50);
-			}
-		}
-	}
-	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
-		background.harvestCarrot(chField.x, chField.y);
-		carrotAmount += 1;
-		carrotText.setString(std::to_string(carrotAmount));
-		playSound(harvestCarrot, 100.0f);
-	}
-	for (size_t i = 0; i < rabbits.size(); ++i) {	
-		sf::Vector2i rField = checkField(rabbits[i].first);
-		sf::Vector2i closeFieldWithCarrot(3, 3);
-		int min = 100;
-		for (size_t x = 0; x < 8; x++) {
-			for (size_t y = 0; y < 8; y++) {
-				if (background.getFieldType(x, y) == 0 && background.getFieldLevel(x, y) == 3) {
-					if (std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y)) < min) {
-						min = std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y));
-						closeFieldWithCarrot = sf::Vector2i(x, y);
-					}
-				}
-			}
-		}
-		if (closeFieldWithCarrot.x > rField.x) {
-			rabbits[i].first.move(Right);
-		}
-		
-		if (closeFieldWithCarrot.x < rField.x) {
-			rabbits[i].first.move(Left);
-		}
-
-		if (closeFieldWithCarrot.y < rField.y) {
-			rabbits[i].first.move(Up);
-		}
-
-		if (closeFieldWithCarrot.y > rField.y) {
-			rabbits[i].first.move(Down);
-		}
-
-		if (closeFieldWithCarrot == rField) {
-			background.eatCarrot(rField.x, rField.y);
-			rabbits[i].first.move(Stop);
-		}
-		rabbits[i].first.update(dt);
-	}
+	playerUpdate(dt);
+	rabbitsUpdate(dt);
 }
 
 void World::draw() {
@@ -164,4 +107,70 @@ Background& World::getBackground() {
 
 SidePanel& World::getSidePanel() {
 	return sidePanel;
+}
+
+void World::playerUpdate(sf::Time& dt) {
+	character.update(dt);
+	background.update(dt);
+	character.setField(checkField(character));
+	sf::Vector2i chField = character.getField();
+	if ((background.getFieldType(chField.x, chField.y) == 2 && character.getWater() != 4)) {
+		character.setWater(4);
+		playSound(enteringWater, 100.0f);
+	}
+	if ((character.getWater() == 4 && background.getFieldType(chField.x, chField.y) != 2)) {
+		character.setWater(0);
+	}
+	if (character.animation.getAnimation() < 4) {
+		if (character.lastFrame != 0) {
+			if (character.animation.getFrame() == 2) {
+				playSoundFoot(playerFootsteps1, 50);
+			}
+		}
+	}
+	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
+		background.harvestCarrot(chField.x, chField.y);
+		carrotAmount += 1;
+		carrotText.setString(std::to_string(carrotAmount));
+		playSound(harvestCarrot, 100.0f);
+	}
+}
+
+void World::rabbitsUpdate(sf::Time& dt) {
+	for (size_t i = 0; i < rabbits.size(); ++i) {
+		sf::Vector2i rField = checkField(rabbits[i].first);
+		sf::Vector2i closeFieldWithCarrot(3, 3);
+		int min = 100;
+		for (size_t x = 0; x < 8; x++) {
+			for (size_t y = 0; y < 8; y++) {
+				if (background.getFieldType(x, y) == 0 && background.getFieldLevel(x, y) == 3) {
+					if (std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y)) < min) {
+						min = std::abs(int(rabbits[i].second.x - x)) + std::abs(int(rabbits[i].second.y - y));
+						closeFieldWithCarrot = sf::Vector2i(x, y);
+					}
+				}
+			}
+		}
+		if (closeFieldWithCarrot.x > rField.x) {
+			rabbits[i].first.move(Right);
+		}
+
+		if (closeFieldWithCarrot.x < rField.x) {
+			rabbits[i].first.move(Left);
+		}
+
+		if (closeFieldWithCarrot.y < rField.y) {
+			rabbits[i].first.move(Up);
+		}
+
+		if (closeFieldWithCarrot.y > rField.y) {
+			rabbits[i].first.move(Down);
+		}
+
+		if (closeFieldWithCarrot == rField) {
+			background.eatCarrot(rField.x, rField.y);
+			rabbits[i].first.move(Stop);
+		}
+		rabbits[i].first.update(dt);
+	}
 }
