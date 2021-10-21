@@ -63,7 +63,7 @@ void Background::draw(sf::RenderWindow& window) {
 			}
 		}
 	}	
-	//window.draw(bground);
+	window.draw(bground);
 }
 
 void Background::update(sf::Time& dt) {
@@ -111,6 +111,14 @@ bool Background::fertilize(int x, int y) {
 	if (y < 7 && fields[x][y+1]->getType() == 2 || fields[x][y + 1]->getType() == 3) {
 		fields[x][y + 1]->setLevel(fields[x][y]->getType());
 		fields[x][y + 1]->updateTextureRect();
+	}
+	return s;
+}
+
+bool Background::eatCarrot(int x, int y) {
+	bool s = fields[x][y]->eatCarrot();
+	if (s) {
+		fields[x][y]->updateTextureRect();
 	}
 	return s;
 }

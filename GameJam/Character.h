@@ -16,7 +16,7 @@ enum Move {
 
 class Character : public sf::Sprite {
 public:
-   Character(sf::Vector2f position = sf::Vector2f(0.0f, 0.0f), float v = 100.0f);
+   Character(sf::Vector2f position = sf::Vector2f(0.0f, 0.0f), float v = 100.0f, bool isP = false);
    void update(sf::Time dt);
    void move(Move move);
    void setVelocity(float v);
@@ -28,6 +28,7 @@ public:
    int lastFrame;
    void setField(sf::Vector2i field);
    sf::Vector2i getField();
+   void playerControl(bool i);
 private:
    void setSpeed(sf::Vector2f speed);
    void setSpeed(float x, float y);
@@ -39,5 +40,6 @@ private:
    bool isFront, isRight;
    float velocity;
    int isInWater;
+   bool isPlayer;
 
 };

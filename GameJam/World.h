@@ -27,6 +27,6 @@ private:
    TextureHolder mTextures;
    SoundHolder mSounds;
    Background background;
-   std::vector<Character> rabbits;
+   std::vector<std::pair<Character, sf::Vector2i>> rabbits;
    SidePanel sidePanel;
 };
