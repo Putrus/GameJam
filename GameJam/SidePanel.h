@@ -6,11 +6,13 @@ public:
    ~SidePanel();
    void draw(sf::RenderWindow& window);
    void initialize(TextureHolder& textures);
+   bool check(int n);
 private:
 
 public:
 
 private:
    std::vector<Panel*> panels;
+   Panel* checkPanel;
 };
 
