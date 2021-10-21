@@ -14,7 +14,7 @@ void World::update(sf::Time dt) {
 	sf::Vector2i chField = character.getField();
 	if ((background.getFieldType(chField.x, chField.y) == 2 && character.getWater() != 4)) {
 		character.setWater(4);
-		playSound(fertilize);
+		playSound(enteringWater, 100.0f);
 	}
 	if ((character.getWater() == 4 && background.getFieldType(chField.x, chField.y) != 2)) {
 		character.setWater(0);
@@ -22,14 +22,14 @@ void World::update(sf::Time dt) {
 	if (character.animation.getAnimation() < 4) {
 		if (character.lastFrame != 0) {
 			if (character.animation.getFrame() == 2) {
-				playSoundFoot(playerFootsteps1,20);
+				playSoundFoot(playerFootsteps1,50);
 			}
 		}
 	}
 	
 	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
 		background.harvestCarrot(chField.x, chField.y);
-		playSound(harvestCarrot);
+		playSound(harvestCarrot, 100.0f);
 	}
 }
 
@@ -80,7 +80,7 @@ Character& World::getCharacter() {
 	return character;
 }
 
-void World::playSound(Sounds s,float v) {
+void World::playSound(Sounds s, float v) {
 	sound.setBuffer(mSounds.get(s));
 	sound.setVolume(v);
 	sound.play();

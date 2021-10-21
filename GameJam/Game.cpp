@@ -53,21 +53,21 @@ void Game::processEvents()
 					std::cout << nr;
 					switch (nr) {
 					case 0:
-						mWorld.playSound(plantCarrots1);
+						mWorld.playSound(plantCarrots1, 100.0f);
 						break;
 					case 1:
-						mWorld.playSound(plantCarrots2);
+						mWorld.playSound(plantCarrots2, 100.0f);
 						break;
 					case 2:
-						mWorld.playSound(plantCarrots3);
+						mWorld.playSound(plantCarrots3, 100.0f);
 						break;
 					case 3:
-						mWorld.playSound(plantCarrots4);
+						mWorld.playSound(plantCarrots4, 100.0f);
 						break;
 					}
 				}
 				if (background.fertilize(character.getField().x, character.getField().y)) {
-					mWorld.playSound(fertilize);
+					mWorld.playSound(fertilize, 100.0f);
 				}
 			}
 			break;

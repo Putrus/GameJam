@@ -11,13 +11,12 @@ public:
    Character& getCharacter();
    Background& getBackground();
    sf::Vector2i checkField(Character& character);
-   void playSound(Sounds s);
+   void playSound(Sounds s, float v);
 
 private:
    void loadTextures();
    void loadSounds();
    void buildScene();
-   void playSound(Sounds s, float v);
    void playSoundFoot(Sounds s, float v);
 
 private:
