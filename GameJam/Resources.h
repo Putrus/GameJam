@@ -31,7 +31,8 @@ enum Sounds {
    plantCarrots1,
    plantCarrots2,
    plantCarrots3,
-   plantCarrots4
+   plantCarrots4,
+   mainMusic
 };
 
 //enum Sound

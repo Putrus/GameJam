@@ -21,9 +21,9 @@ private:
    void loadFonts();
    void buildScene();
    void playSoundFoot(Sounds s, float v);
-
    void playerUpdate(sf::Time& dt);
    void rabbitsUpdate(sf::Time& dt);
+   void playMusicMain( float v);
 
 private:
    Character character;
@@ -32,6 +32,7 @@ private:
    sf::RenderWindow& mWindow;
    sf::Sound sound;
    sf::Sound soundFoot;
+   sf::Music musicMain;
    TextureHolder mTextures;
    SoundHolder mSounds;
    FontHolder mFontCarrot;   

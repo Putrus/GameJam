@@ -4,6 +4,7 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
 	loadSounds();
 	loadFonts();
+	playMusicMain(100.0f);
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
@@ -112,6 +113,7 @@ void World::loadSounds() {
 	mSounds.load(Sounds::plantCarrots2, "Resources/Sound/plantCarrots2.wav");
 	mSounds.load(Sounds::plantCarrots3, "Resources/Sound/plantCarrots3.wav");
 	mSounds.load(Sounds::plantCarrots4, "Resources/Sound/plantCarrots4.wav");
+	mSounds.load(Sounds::mainMusic, "Resources/Sound/Music/Music.wav");
 }
 
 void World::loadFonts() {
@@ -149,6 +151,13 @@ void World::playSoundFoot(Sounds s, float v) {
 	soundFoot.setBuffer(mSounds.get(s));
 	soundFoot.setVolume(v);
 	soundFoot.play();
+}
+
+void World::playMusicMain(float v) {
+	musicMain.openFromFile("Resources/Sound/Music/Music.wav");
+	musicMain.setVolume(v);
+	musicMain.setLoop(true);
+	musicMain.play();
 }
 
 
