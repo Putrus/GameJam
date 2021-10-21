@@ -3,10 +3,16 @@
 World::World(sf::RenderWindow& window) : mWindow(window) {
 	loadTextures();
 	loadSounds();
+	loadFonts();
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
 	character.playerControl(true);
+	carrotText.setFont(mFontCarrot.get(carrotFont));
+	carrotText.setPosition(1670.0f, 180.0f);
+	carrotText.setCharacterSize(40);
+	carrotText.setString(std::to_string(carrotAmount));
+	
 	for (int i = 0; i < 10; ++i) {
 		int x = std::rand() % 7 + 0;
 		int y = std::rand() % 7 + 9;
@@ -38,9 +44,11 @@ void World::update(sf::Time dt) {
 	}
 	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
 		background.harvestCarrot(chField.x, chField.y);
+		carrotAmount += 1;
+		carrotText.setString(std::to_string(carrotAmount));
 		playSound(harvestCarrot, 100.0f);
 	}
-	for (size_t i = 0; i < rabbits.size(); ++i) {
+	for (size_t i = 0; i < rabbits.size(); ++i) {	
 		sf::Vector2i rField = checkField(rabbits[i].first);
 		sf::Vector2i closeFieldWithCarrot(3, 3);
 		int min = 100;
@@ -82,6 +90,7 @@ void World::draw() {
 	background.draw(mWindow);
 	mWindow.draw(character);
 	sidePanel.draw(mWindow);
+	mWindow.draw(carrotText);
 	for (int i = 0; i < rabbits.size(); ++i) {
 		mWindow.draw(rabbits[i].first);
 	}
@@ -108,6 +117,10 @@ void World::loadSounds() {
 	mSounds.load(Sounds::plantCarrots2, "Resources/Sound/plantCarrots2.wav");
 	mSounds.load(Sounds::plantCarrots3, "Resources/Sound/plantCarrots3.wav");
 	mSounds.load(Sounds::plantCarrots4, "Resources/Sound/plantCarrots4.wav");
+}
+
+void World::loadFonts() {
+	mFontCarrot.load(Fonts::carrotFont, "Resources/Font/pixel.ttf");
 }
 
 void World::buildScene() {

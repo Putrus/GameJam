@@ -16,7 +16,8 @@ enum Textures {
 enum Fonts {
    f1,
    f2,
-   f3
+   f3,
+   carrotFont
 };
 
 enum Sounds {

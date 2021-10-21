@@ -6,7 +6,7 @@ Character::Character(sf::Vector2f position, float v, bool isP) : isFront(true), 
 	actualField = sf::Vector2i(0, 0);
 	isInWater = 0;
 	lastFrame = 0;
-	setPosition(900.0f, 800.0f);
+	setPosition(800.0f, 800.0f);
 }
 
 void Character::update(sf::Time dt) {
