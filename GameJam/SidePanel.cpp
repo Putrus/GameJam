@@ -3,7 +3,9 @@
 
 
 void SidePanel::draw(sf::RenderWindow& window) {
-
+	for (size_t i = 0; i < panels.size(); ++i) {
+		window.draw(*panels[i]);
+	}
 }
 
 void SidePanel::initialize(TextureHolder& textures) {
@@ -13,7 +15,7 @@ void SidePanel::initialize(TextureHolder& textures) {
 			if (i == 0) {
 				y = 49;
 			}
-			panel->setPosition(1419, 49);
+			panel->setPosition(1419, y);
 			panel->setTexture(textures.get(Textures::panel));
 			if (i != 0) {
 				panel->setTextureRect(sf::IntRect(0, 141 + (i - 1) * 99, 501, 99));
