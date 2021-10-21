@@ -9,6 +9,7 @@ public:
 private:
    bool isActive;
 public:
+   int nr;
    void setActive(bool a);
    bool getIsActive();
 

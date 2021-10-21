@@ -2,6 +2,7 @@
 
 Panel::Panel() {
    isActive = false;
+   nr = 0;
    setColor(sf::Color(127, 127, 127));
 }
 

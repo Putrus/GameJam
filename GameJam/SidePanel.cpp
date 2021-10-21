@@ -19,7 +19,7 @@ void SidePanel::initialize(TextureHolder& textures) {
 			}
 			panel->setPosition(1419, y);
 			panel->setTexture(textures.get(Textures::panel));
-			if (i == 0 || i == 1 || i == 2 || i == 6) {
+			if (i == 0 || i == 1 || i == 2) {
 				panel->setActive(true);
 			}
 			if (i != 0) {
@@ -47,6 +47,7 @@ SidePanel::~SidePanel() {
 bool SidePanel::check(int n) {
 	if (panels[n]->getIsActive()) {
 		checkPanel->setPosition(checkPanel->getPosition().x, panels[1]->getPosition().y + ((n - 1) * 105));
+		checkPanel->nr = n;
 		return true;
 	}
 	return false;

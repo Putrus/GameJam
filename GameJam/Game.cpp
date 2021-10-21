@@ -49,7 +49,7 @@ void Game::processEvents()
 				character.move(Stop);
 			}
 			if (event.key.code == sf::Keyboard::Space) {
-				if (background.plantCarrot(character.getField().x, character.getField().y)) {
+				if (mWorld.seeds > 0 && background.plantCarrot(character.getField().x, character.getField().y)) {
 					int nr = std::rand() % 4;
 					std::cout << nr;
 					switch (nr) {
@@ -66,9 +66,11 @@ void Game::processEvents()
 						mWorld.playSound(plantCarrots4, 100.0f);
 						break;
 					}
+					mWorld.seeds--;
 				}
-				if (background.fertilize(character.getField().x, character.getField().y)) {
+				if (mWorld.dig > 0 && background.fertilize(character.getField().x, character.getField().y)) {
 					mWorld.playSound(fertilize, 100.0f);
+					mWorld.dig--;
 				}
 			}
 			if (event.key.code == sf::Keyboard::Num1) {

@@ -15,6 +15,10 @@ public:
    int carrotAmount = 0;
    sf::Text carrotText;
    sf::Text priceCarrotText, priceDigText, priceLiliesText, priceFertilizeText, priceWaterText, priceTurretText, priceSpeedText;
+   sf::Text aCarrotText, aDigText;
+   int seeds, dig;
+   int seedsPrice;
+   int digPrice;
 private:
    void loadTextures();
    void loadSounds();
@@ -24,7 +28,7 @@ private:
 
    void playerUpdate(sf::Time& dt);
    void rabbitsUpdate(sf::Time& dt);
-
+   void initializeText();
 private:
    Character character;
    Background background;
@@ -35,6 +39,5 @@ private:
    TextureHolder mTextures;
    SoundHolder mSounds;
    FontHolder mFontCarrot;   
-   
    std::vector<std::pair<Character, sf::Vector2i>> rabbits;
 };
