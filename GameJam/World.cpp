@@ -6,6 +6,13 @@ World::World(sf::RenderWindow& window) : mWindow(window) {
 	background.initialize(mTextures);
 	sidePanel.initialize(mTextures);
 	character.setTexture(mTextures.get(Textures::farmer));
+	for (int i = 0; i < 10; ++i) {
+		rabbits.push_back(Character());
+		int x = std::rand() % 300 + 200;
+		int y = std::rand() % 300 + 200;
+		rabbits[i].setPosition(x + 576, y);
+		rabbits[i].setTexture(mTextures.get(Textures::rabbit));
+	}
 }
 
 void World::update(sf::Time dt) {
@@ -27,10 +34,42 @@ void World::update(sf::Time dt) {
 			}
 		}
 	}
-	
 	if (background.getFieldType(chField.x, chField.y) == 0 && background.getFieldLevel(chField.x, chField.y) == 3) {
 		background.harvestCarrot(chField.x, chField.y);
 		playSound(harvestCarrot, 100.0f);
+	}
+	for (size_t i = 0; i < rabbits.size(); ++i) {
+		sf::Vector2i rField = rabbits[i].getField();
+		sf::Vector2i closeFieldWithCarrot(3, 3);
+		int min = 100;
+		for (size_t i = 0; i < 8; i++) {
+			for (size_t j = 0; j < 8; j++) {
+				if (background.getFieldType(i, j) == 0 && background.getFieldLevel(i, j) == 3) {
+					if (std::abs(int(rField.x - i)) + std::abs(int(rField.y - j)) < min) {
+						min = std::abs(int(rField.x - i)) + std::abs(int(rField.y - j));
+						if (min != 0) {
+							closeFieldWithCarrot = sf::Vector2i(i, j);
+						}
+					}
+				}
+			}
+		}
+		if (closeFieldWithCarrot.x > rField.x) {
+			rabbits[i].move(Down);
+		}
+		
+		if (closeFieldWithCarrot.x < rField.x) {
+			rabbits[i].move(Up);
+		}
+
+		if (closeFieldWithCarrot.y < rField.y) {
+			rabbits[i].move(Left);
+		}
+
+		if (closeFieldWithCarrot.y > rField.y) {
+			rabbits[i].move(Right);
+		}
+		rabbits[i].update(dt);
 	}
 }
 
@@ -38,6 +77,9 @@ void World::draw() {
 	background.draw(mWindow);
 	mWindow.draw(character);
 	sidePanel.draw(mWindow);
+	for (int i = 0; i < 10; ++i) {
+		mWindow.draw(rabbits[i]);
+	}
 }
 
 void World::loadTextures() {
@@ -100,4 +142,8 @@ void World::playSoundFoot(Sounds s, float v) {
 Background& World::getBackground() {
 	return background;
 	soundFoot.play();
+}
+
+SidePanel& World::getSidePanel() {
+	return sidePanel;
 }

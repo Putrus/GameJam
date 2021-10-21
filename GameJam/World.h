@@ -9,6 +9,7 @@ public:
    void draw();
    Character& getCharacter();
    Background& getBackground();
+   SidePanel& getSidePanel();
    sf::Vector2i checkField(Character& character);
    void playSound(Sounds s, float v);
 

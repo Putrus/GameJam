@@ -32,6 +32,7 @@ void Game::processEvents()
 	sf::Event event;
 	Character& character = mWorld.getCharacter();
 	Background& background = mWorld.getBackground();
+	SidePanel& sidePanel = mWorld.getSidePanel();
 	while (mWindow.pollEvent(event))
 	{
 		switch (event.type)
@@ -69,6 +70,27 @@ void Game::processEvents()
 				if (background.fertilize(character.getField().x, character.getField().y)) {
 					mWorld.playSound(fertilize, 100.0f);
 				}
+			}
+			if (event.key.code == sf::Keyboard::Num1) {
+				sidePanel.check(1);
+			}
+			if (event.key.code == sf::Keyboard::Num2) {
+				sidePanel.check(2);
+			}
+			if (event.key.code == sf::Keyboard::Num3) {
+				sidePanel.check(3);
+			}
+			if (event.key.code == sf::Keyboard::Num4) {
+				sidePanel.check(4);
+			}
+			if (event.key.code == sf::Keyboard::Num5) {
+				sidePanel.check(5);
+			}
+			if (event.key.code == sf::Keyboard::Num6) {
+				sidePanel.check(6);
+			}
+			if (event.key.code == sf::Keyboard::Num7) {
+				sidePanel.check(7);
 			}
 			break;
 		case sf::Event::KeyPressed:			
