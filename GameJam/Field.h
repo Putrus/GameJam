@@ -17,6 +17,7 @@ public:
 	int getLevel();
 	void setLevel(int lvl);
 	void harvestCarrot();
+	void growUp();
 private:
 	
 public: 
@@ -26,6 +27,7 @@ private:
 	Animation  aEffect;
 	int lvl;
 	int type;
-	sf::Time growTime;
 	bool animate;
+	float growTime;
+	float timeCounter;
 };

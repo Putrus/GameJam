@@ -68,6 +68,7 @@ void Character::move(Move move) {
 		  else
 			animation.setAnimation(13);
 	  }
+	  isFront = true;
 	  //isRight ? animation.setAnimation(isInWater + 12) : animation.setAnimation(isInWater + 13);
       break;
    case UpLeft:

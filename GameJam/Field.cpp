@@ -2,9 +2,6 @@
 #include "Field.h"
 #include <iostream>
 Field::Field(int x, int y) : aEffect(Effect, y, 15, 0.20f) {
-   if (y == 2) {
-      x = 2;
-   }
    setTextureRect(sf::IntRect(x * 96, y * 96, 96, 96));
    effect = new Sprite();
    lvl = x;
@@ -13,12 +10,19 @@ Field::Field(int x, int y) : aEffect(Effect, y, 15, 0.20f) {
    if (x == 0 && y == 1 || (x == 3 && y == 0) || y == 2) {
       animate = true;
    }
+   growTime = float(std::rand() % 20 + 10);
+   timeCounter = 0.0f;
 }
 
 Field::~Field() {
 }
 
 void Field::update(sf::Time& dt) {
+   timeCounter += dt.asSeconds();
+   if (timeCounter > growTime) {
+      growUp();
+      timeCounter = 0.0f;
+   }
    if (animate) {
       aEffect.update(dt);
       effect->setTextureRect(sf::IntRect(aEffect.getFrame()*96, aEffect.getAnimation() *96, 96, 96));
@@ -66,4 +70,14 @@ void Field::harvestCarrot() {
    setLevel(0);
    setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
    animate = false;
+}
+
+void Field::growUp() {
+   if (getLevel() < 3 && getType() == 0) {
+      setLevel(getLevel() + 1);
+      if (getLevel() == 3) {
+         animate = true;
+      }
+      setTextureRect(sf::IntRect(lvl * 96, type * 96, 96, 96));
+   }
 }

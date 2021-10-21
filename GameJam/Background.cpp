@@ -9,6 +9,19 @@ void Background::initialize(TextureHolder& textures) {
 		for (size_t j = 0; j < 8; ++j) {
 			int x = std::rand() % 4;
 			int y = std::rand() % 3;
+			if (y == 2) {
+				if (j != 0) {
+					if (fields[i][j - 1]->getType() != 2) {
+						x = fields[i][j - 1]->getType();
+					}
+					else {
+						x = y;
+					}
+				}
+				else {
+					x = y;
+				}
+			}
 			Field* field = new Field(x, y);
 			field->setTexture(textures.get(Textures::ground));
 			field->setEffectTexture(textures.get(Textures::groundEffects));
@@ -64,4 +77,8 @@ void Background::setFieldLevel(int x, int y, int lvl) {
 
 void Background::harvestCarrot(int x, int y) {
 	fields[x][y]->harvestCarrot();
+}
+
+void Background::growUp(int x, int y) {
+	fields[x][y]->growUp();
 }

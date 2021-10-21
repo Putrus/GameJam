@@ -15,6 +15,7 @@ public:
 	int getFieldLevel(int x, int y);
 	void setFieldLevel(int x, int y, int lvl);
 	void harvestCarrot(int x, int y);
+	void growUp(int x, int y);
 private:
 	std::vector <std::vector<Field*>> fields;
 };

@@ -12,6 +12,7 @@ void Game::run()
 	//game loop
 	while (mWindow.isOpen())
 	{
+		
 		sf::Time elapsedTime = clock.restart();
 		timeSinceLastUpdate += elapsedTime;
 		while (timeSinceLastUpdate > mTimePerFrame)
@@ -21,7 +22,7 @@ void Game::run()
 			update(mTimePerFrame);
 			processEvents();
 		}
-		fastUpdate();
+		//fastUpdate();
 		render();
 	}
 }
